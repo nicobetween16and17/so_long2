@@ -20,6 +20,7 @@ SRCFILES		=   ../ft_printf/ft_print_ptr.c\
                     hooks.c\
                     util.c\
                     utils2.c\
+                    init.c\
 
 
 SRCS			=	$(addprefix $(SRCDIR), $(SRCFILES))

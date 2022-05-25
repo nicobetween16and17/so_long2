@@ -28,15 +28,6 @@ void	end_game(t_map map)
 	free(map.exits);
 }
 
-t_position	new_pos(int x, int y)
-{
-	t_position	pos;
-
-	pos.x = x;
-	pos.y = y;
-	return (pos);
-}
-
 int	collision_effect(t_position p, t_vars *v, int i)
 {
 	while (v->shits[++i].p.x != -1)
@@ -59,7 +50,7 @@ int	collision_pos(t_position obj, t_position larme, t_vars *v)
 
 int	collision(t_position current, t_vars *v, int i, int j)
 {
-	char **map;
+	char	**map;
 
 	map = v->map.map;
 	while (map[++i])
@@ -67,7 +58,8 @@ int	collision(t_position current, t_vars *v, int i, int j)
 		j = 0;
 		while (map[i][++j])
 		{
-			if (map[i][j] == '1' && collision_pos(new_pos(i * 42, j * 42), current, v))
+			if (map[i][j] == '1'
+				&& collision_pos(new_pos(i * 42, j * 42), current, v))
 				return (1);
 		}
 	}

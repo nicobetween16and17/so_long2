@@ -14,43 +14,41 @@
 
 void	put_hp(t_vars *v)
 {
-	t_position pos;
+	t_position	pos;
 
 	pos.y = -1;
 	pos.x = 1;
 	while (++pos.y < v->player.hp / 2)
 		mlx_put_image_to_window(v->mlx, v->win,
-								v->map.images[27].img, 15 * pos.x++, 10);
+			v->map.images[27].img, 15 * pos.x++, 10);
 	pos.y = -1;
 	while (++pos.y < v->player.hp % 2)
 		mlx_put_image_to_window(v->mlx, v->win,
-								v->map.images[28].img, 15 * pos.x++, 10);
+			v->map.images[28].img, 15 * pos.x++, 10);
 	pos.y = -1;
 	while (++pos.y < 3 - ((v->player.hp % 2) + (v->player.hp / 2)))
 		mlx_put_image_to_window(v->mlx, v->win,
-								v->map.images[29].img, 15 * pos.x++, 10);
+			v->map.images[29].img, 15 * pos.x++, 10);
 }
 
 int	put_shit(t_vars *v, t_position p, int i)
 {
 	while (v->shits[++i].p.x != -1)
 	{
-		if (v->shits[i].p.x == p.x && v->shits[i].p.y == p.y) {
+		if (v->shits[i].p.x == p.x && v->shits[i].p.y == p.y)
+		{
+			if (v->shits[i].state == 5)
+				put_it(v, p, 0);
+			else if (v->shits[i].state == 4)
+				put_it(v, p, 45);
+			else if (v->shits[i].state == 3)
+				put_it(v, p, 46);
+			else if (v->shits[i].state == 2)
+				put_it(v, p, 47);
+			else if (v->shits[i].state <= 1)
 			{
-				if (v->shits[i].state == 5)
-					put_it(v, p, 0);
-				else if (v->shits[i].state == 4)
-					put_it(v, p, 45);
-				else if (v->shits[i].state == 3)
-					put_it(v, p, 46);
-				else if (v->shits[i].state == 2)
-					put_it(v, p, 47);
-				else if (v->shits[i].state <= 1)
-				{
-					system("afplay sound/plop.wav &");
-					v->map.map[p.y][p.x] = 'M';
-				}
-
+				system("afplay sound/plop.wav &");
+				v->map.map[p.y][p.x] = 'M';
 			}
 		}
 		if (v->map.map[p.y][p.x] == 'M')
@@ -62,10 +60,9 @@ int	put_shit(t_vars *v, t_position p, int i)
 int	put_it2(t_vars *vars, t_position pos, int img)
 {
 	mlx_put_image_to_window(vars->mlx, vars->win, vars->map.images[img].img,
-							pos.x, pos.y);
+		pos.x, pos.y);
 	return (1);
 }
-
 
 void	put_timer(t_vars *v)
 {
@@ -91,8 +88,7 @@ void	put_mooves(int nb, t_vars *v)
 	}
 	else
 	{
-		put_it2(v, new_pos(10 + v->t,1), n + 51);
+		put_it2(v, new_pos(10 + v->t, 1), n + 51);
 		v->t += 10;
 	}
-
 }

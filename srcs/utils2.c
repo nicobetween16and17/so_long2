@@ -12,10 +12,17 @@
 
 #include "../includes/so_long.h"
 
-
-void moove_toward(t_vars *v, t_fly *fly)
+t_position	new_pos(int x, int y)
 {
+	t_position	pos;
 
+	pos.x = x;
+	pos.y = y;
+	return (pos);
+}
+
+void	moove_toward(t_vars *v, t_fly *fly)
+{
 	if (v->p.x > fly->h.y)
 		fly->h.y += 4;
 	else if (v->p.y > fly->h.x)
@@ -29,7 +36,7 @@ void moove_toward(t_vars *v, t_fly *fly)
 void	enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 {
 	int	i;
-	int j;
+	int	j;
 
 	j = v->time;
 	srand(v->time % 27);
@@ -46,6 +53,7 @@ void	enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 			v->flies[i].h.y += rand() % 4;
 		if (!(v->time % 2))
 			moove_toward(v, &v->flies[i]);
-		f(v->mlx, v->win, v->sprites[5]->content, v->flies[i].h.x, v->flies[i].h.y);
+		f(v->mlx, v->win, v->sprites[5]->content,
+			v->flies[i].h.x, v->flies[i].h.y);
 	}
 }

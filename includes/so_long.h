@@ -205,5 +205,10 @@ int			put_shit(t_vars *v, t_position p, int i);
 void		put_timer(t_vars *v);
 void		put_mooves(int nb, t_vars *v);
 void		enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int));
+void		nb_shit(t_vars *v, char **map, int *nb_shits);
+void		init_cacas(t_vars *v, char **map, int nb_shits, int i_shit);
+void		nb_flie(char **map, int *nb_flies);
+void		init_flies(t_vars *v, char **map, int nb_flies, int i_fly);
+void		set_player_pos(t_vars *v);
 
 #endif
