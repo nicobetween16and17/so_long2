@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/0.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2point.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/7.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/8.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/9.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fly_1.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fly_2.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fly_3.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fly_4.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fly_5.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/util.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gnl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/Wcorner_DL.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/Wcorner_DL.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/Wcorner_DR.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/Wcorner_DR.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/Wcorner_UL.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/Wcorner_UL.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/Wcorner_UR.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/Wcorner_UR.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/collectible.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/collectible.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/corner_DLxpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/corner_DR.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/corner_DR.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/corner_UL.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/corner_UL.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/corner_UR.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/corner_UR.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_d_1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_d_2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_d_3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_l_1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_l_2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_r_1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/e_r_2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/exit_close.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/exit_close.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/exit_open.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/floor.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/floor.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/i_floor_d.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/i_floor_d.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/i_floor_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/i_floor_l.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/i_floor_r.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/i_floor_r.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/i_floor_u.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/i_floor_u.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/looking_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/looking_l.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/looking_r.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/looking_r.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/looking_u.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/looking_u.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/poop_f1.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/poop_f1.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/poop_f2.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/poop_f2.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/poop_f3.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/poop_f3.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/poop_f4.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/poop_f4.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/poop_f5.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/poop_f5.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/standing_d.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/standing_d.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/tears.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/tears.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/ui_heart.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/ui_heart.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/ui_heart2.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/ui_heart2.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/ui_heart3.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/ui_heart3.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_d1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_d2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_d3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_l1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_l2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_l3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_r1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_r2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/walk_r3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall1.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall1.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall2.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall2.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall4.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall4.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall_down.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall_down.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall_left.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall_left.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall_right.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall_right.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boir/wall_up.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall_up.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bordure1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bordure2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bordure3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coin1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coin2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coin3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coin4.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exits.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/bordure1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/bordure2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/bordure3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/bordure4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/coin1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/coin2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/coin3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/coin4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sol1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sol2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sol3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/sprite 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/wall3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/walls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/images2/walls2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/exits.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/pnj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/sol1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/sol2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/sol3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pngs/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pnj.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol_1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol_2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sol_3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 1.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 3.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 4.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 5.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sprite 6.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall3.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/img/wall3.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/walls.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/walls2.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/ten.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/ten.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/battle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/hooks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/memory_usage.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/memory_usage.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29I9BzkF9eXB4nYroBQU3EBGapq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/img/boir" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/includes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="" />
+      <created>1652789600901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652789600901</updated>
+      <workItem from="1652789602056" duration="2214000" />
+      <workItem from="1652796253248" duration="3028000" />
+      <workItem from="1652954665118" duration="10644000" />
+      <workItem from="1652972298061" duration="8871000" />
+      <workItem from="1653052675811" duration="9775000" />
+      <workItem from="1653089519775" duration="4508000" />
+      <workItem from="1653098710518" duration="1653000" />
+      <workItem from="1653448828453" duration="20646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653058457167">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1653058457167" />
+    <state x="252" y="330" key="SettingsEditor" timestamp="1653053942527">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
+    <state x="1613" y="23" width="934" height="1331" key="dock-window-1" timestamp="1653462929410">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1613" y="23" width="934" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1653462929410" />
+    <state x="1665" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1653099092306" />
+    <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1652789603457" />
+    <state x="405" y="326" key="run.anything.popup" timestamp="1652790142351">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="405" y="326" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1652790142351" />
+  </component>
+</project>

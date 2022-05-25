@@ -13,7 +13,7 @@
 #include "includes/so_long.h"
 #include <stdio.h>
 
-t_data 	*data_init(t_data *images, int w, int h, void *mlx)
+/*t_data 	*data_init(t_data *images, int w, int h, void *mlx)
 {
 	images = malloc(22 * sizeof(t_data));
 	images[0].img = mlx_xpm_file_to_image(mlx, "img/walls2.xpm", &w, &h);
@@ -46,18 +46,30 @@ int	key_hook(int keycode, t_vars *vars)
 		exit(1);
 	printf("Hello from key_hook! %d\n", keycode);
 	return (0);
-}
+}*/
 
 int	main(void)
 {
 	t_vars	vars;
 	t_data *images;
+	t_list *test;
 
-	vars.mlx = mlx_init();
-	vars.win = mlx_new_window(vars.mlx, 640, 480, "Hello world!");
-	vars.map.images = data_init(vars.map.images, 18, 18, vars.mlx);
-	printf("%s\n", vars.map.images[0].img);
-	mlx_put_image_to_window(vars.mlx, vars.win, vars.map.images[0].img, 0, 0);
-	mlx_key_hook(vars.win, key_hook, &vars);
-	mlx_loop(vars.mlx);
+	ft_lstadd_back(&test, ft_lstnew("test1"));
+	ft_lstadd_back(&test, ft_lstnew("test2"));
+	ft_lstadd_back(&test, ft_lstnew("test3"));
+	ft_lstadd_back(&test, ft_lstnew("test4"));
+	ft_lstadd_back(&test, ft_lstnew("test5"));
+	ft_lstadd_back(&test, ft_lstnew("test6"));
+	ft_lstadd_back(&test, test);
+	for (int i = 0; i < 20; ++i) {
+		printf("%s\n",test->content);
+		test = test->next;
+	}
+	//vars.mlx = mlx_init();
+	//vars.win = mlx_new_window(vars.mlx, 640, 480, "Hello world!");
+	//vars.map.images = data_init(vars.map.images, 18, 18, vars.mlx);
+	//printf("%s\n", vars.map.images[0].img);
+	//mlx_put_image_to_window(vars.mlx, vars.win, vars.map.images[0].img, 0, 0);
+	//mlx_key_hook(vars.win, key_hook, &vars);
+	//mlx_loop(vars.mlx);
 }

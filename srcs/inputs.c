@@ -22,12 +22,12 @@ int	set_image2(t_vars *vars, t_position pos, char c)
 		return (put_it(vars, pos, 21));
 	if (c == '1' && pos.y == vars->map.height - 1)
 		return (put_it(vars, pos, 22));
-	if (c == '1')
-		return (put_it(vars, pos, 0));
+	if (c == '1' && put_shit(vars, pos, -1))
+		return (1);
+	if (c == 'M')
+		return (put_it(vars, pos, 48));
 	if (c == '0')
 		return (put_it(vars, pos, 3));
-	if (c == 'P')
-		return (put_it(vars, pos, 6));
 	if (c == 'E' && vars->player.nb_collectibles == vars->map.nb_collectibles)
 		return (put_it(vars, pos, 20));
 	if (c == 'E' && vars->player.nb_collectibles != vars->map.nb_collectibles)
@@ -59,6 +59,7 @@ void	display_map(t_vars *v, char **map)
 {
 	t_position	pos;
 
+	handle_moove(v, 1);
 	pos.y = -1;
 	while (map[++pos.y])
 	{
@@ -66,19 +67,15 @@ void	display_map(t_vars *v, char **map)
 		while (map[pos.y][++pos.x])
 			set_image(v, pos, map[pos.y][pos.x]);
 	}
-	pos.y = -1;
-	pos.x = 1;
-	while (++pos.y < v->player.hp / 2)
-		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[27].img, 15 * pos.x++, 10);
-	pos.y = -1;
-	while (++pos.y < v->player.hp % 2)
-		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[28].img, 15 * pos.x++, 10);
-	pos.y = -1;
-	while (++pos.y < 3 - ((v->player.hp % 2) + (v->player.hp / 2)))
-		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[29].img, 15 * pos.x++, 10);
+	put_hp(v);
+	put_timer(v);
+	v->t = 0;
+	put_mooves(v->player.nb_mooves, v);
+	mlx_put_image_to_window(v->mlx, v->win, v->map.images[9].img,
+		v->p.y + 6, v->p.x + 20);
+	mlx_put_image_to_window(v->mlx, v->win, v->map.images[7].img,
+		v->p.y + 6, v->p.x);
+	enemies_travel(v, mlx_put_image_to_window);
 	tear_travel(v, mlx_put_image_to_window);
 }
 
@@ -109,19 +106,23 @@ void	handle_input(int keycode, t_map *map, t_player *player, t_vars *vars)
 {
 	static int	final_sound;
 
-	ft_printf("keycode is %d %d\n", keycode, vars->last_pos);
 	firing(keycode, vars);
-	if (!possible_moove(keycode, map->map, player->cp))
+	if (!possible_moove(keycode, map->map, player->cp) || player->mooving)
 		return ;
+	vars->p.x = player->cp.x * 42;
+	vars->p.y = player->cp.y * 42;
 	handle_input2(keycode, map, player, &(vars->last_pos));
+	set_direction(vars, keycode);
 	player->nb_mooves++;
 	if (map->map[player->cp.x][player->cp.y] == 'C')
 	{
 		player->nb_collectibles += 1;
 		system("afplay sound/penny_pickup_1.wav &");
 	}
+	player->mooving++;
+	ft_printf("%de déplaçement\n", player->nb_mooves);
 	map->map[player->cp.x][player->cp.y] = 'P';
 	if (map->nb_collectibles == player->nb_collectibles && !final_sound++)
 		system("afplay sound/golden_key.wav &");
-	display_map(vars, map->map);
+
 }

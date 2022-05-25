@@ -32,13 +32,26 @@ typedef enum e_sens{
 	DOWN,
 	LEFT,
 	RIGHT,
-} e_sens;
+}	e_sens;
 
 typedef struct s_position
 {
 	int	x;
 	int	y;
 }	t_position;
+
+typedef struct s_caca
+{
+	t_position	p;
+	int 		state;
+}	t_caca;
+
+typedef struct s_fly
+{
+	t_position	p;
+	int 		hp;
+	t_position	h;
+}	t_fly;
 
 typedef struct s_timer {
 	int	s;
@@ -79,14 +92,10 @@ typedef struct s_player
 	t_position	cp;
 	int			nb_mooves;
 	int 		hp;
+	int			mooving;
 }	t_player;
 
-typedef struct s_sprite
-{
-	void **img;
-}	t_sprite;
-
-typedef struct	s_vars {
+typedef struct s_vars {
 	void		*mlx;
 	void		*win;
 	t_player	player;
@@ -95,7 +104,13 @@ typedef struct	s_vars {
 	t_timer		timer;
 	int			time;
 	int 		last_pos;
-	s_sprite	*sprites;
+	t_list		*sprites[15];
+	t_position	p;
+	e_sens		direction;
+	t_caca		*shits;
+	t_fly		*flies;
+	int			event;
+	int			t;
 }	t_vars;
 
 typedef struct s_args
@@ -105,6 +120,36 @@ typedef struct s_args
 	int		j;
 }	t_args;
 
+int			ft_atoi(const char *str);
+int			ft_isalnum(int c);
+int			ft_isalpha(int c);
+int			ft_isascii(int c);
+int			ft_isprint(int c);
+int			ft_isdigit(int c);
+char		*ft_strchr(const char *s, int c);
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
+size_t		ft_strlcpy(char *dst, const char *src, size_t size);
+size_t		ft_strlen(const char *s);
+char		*ft_strnstr(const char *s1, const char *s2, size_t n);
+char		*ft_strrchr(const char *s, int c);
+int			ft_toupper(int c);
+int			ft_tolower(int c);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
+void		*ft_memset(void *b, int c, size_t n);
+void		ft_bzero(void *b, size_t length);
+void		*ft_memmove(void *s1, const void *s2, size_t n);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
+void		*ft_memchr(const void *s, int c, size_t n);
+void		*ft_memcpy(void *s1, const void *s2, size_t n);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
+char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strtrim(char const *s1, char const *set);
+char		**ft_split(char const *s, char c);
+char		*ft_itoa(int n);
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+char		*ft_strdup(const char *s1);
+void		*ft_calloc(size_t count, size_t size);
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
 int			ft_lstsize(t_list *lst);
@@ -121,12 +166,6 @@ int			ft_putnbr_fd(long n, int fd, int unsign, int *res);
 int			ft_putstr_fd(char *s, int fd);
 int			ft_putchar_fd(char c, int fd, int *res);
 int			ft_print_ptr(void *s);
-char		*get_next_line(int fd);
-int			does_contain(char *s, char c);
-int			ft_strjoin(char **s1, char const *s2);
-int			ft_get_start(char *s);
-void		ft_strdup(char **s1, const char *s2);
-char		*ft_strcpy(char *s, char *s2);
 char		**ft_split(char const *s, char c);
 char		**get_map(char *lines);
 int			nb_collectible(t_map map);
@@ -151,10 +190,20 @@ t_position	new_pos(int x, int y);
 void		vars_ui_timer(t_vars *vars);
 void		duration_plus_one(void *arg);
 void		position_shift(void *arg);
-t_list		*clean_tears(t_list *old);
+t_list		*clean_tears(t_list *old, t_vars *v);
 void		tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int));
 void		firing(int key, t_vars *v);
 int			destroy(int keycode, t_vars *vars);
 int			key_hook(int keycode, t_vars *vars);
+void		handle_moove(t_vars *v, int i);
+void		set_direction(t_vars *v, int keycode);
+void		set_vars(t_vars *v);
+void		init_all_sprites(t_vars *v);
+int			collision(t_position current, t_vars *v, int i, int j);
+void		put_hp(t_vars *v);
+int			put_shit(t_vars *v, t_position p, int i);
+void		put_timer(t_vars *v);
+void		put_mooves(int nb, t_vars *v);
+void		enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int));
 
 #endif

@@ -25,16 +25,13 @@ void	vars_ui_timer(t_vars *v)
 			v->timer.h++;
 		}
 	}
-	ft_printf(" %dh/%dm/%ds\n", v->timer.h, v->timer.m, v->timer.s);
 }
 
 void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 {
 	t_tear	*t;
 	t_list	*start;
-	int cpt;
 
-	cpt = 0;
 	if (!(v->tears))
 		return ;
 	start = v->tears;
@@ -47,7 +44,37 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 		v->tears = v->tears->next;
 	}
 	v->tears = start;
-	v->tears = clean_tears(start);
+	v->tears = clean_tears(start, v);
+
+}
+
+void	set_head(e_sens d, t_vars *v)
+{
+	if (d == UP)
+		v->map.images[7].img = v->map.images[40].img;
+	if (d == UP)
+		v->map.images[8].img = v->map.images[40].img;
+	if (d == LEFT)
+		v->map.images[7].img = v->map.images[41].img;
+	if (d == LEFT)
+		v->map.images[8].img = v->map.images[42].img;
+	if (d == DOWN)
+		v->map.images[7].img = v->map.images[49].img;
+	if (d == DOWN)
+		v->map.images[8].img = v->map.images[50].img;
+	if (d == RIGHT)
+		v->map.images[7].img = v->map.images[39].img;
+	if (d == RIGHT)
+		v->map.images[8].img = v->map.images[43].img;
+	if (d == UP)
+		v->map.images[67].img = v->map.images[40].img;
+	if (d == LEFT)
+		v->map.images[67].img = v->map.images[41].img;
+	if (d == DOWN)
+		v->map.images[67].img = v->map.images[49].img;
+	if (d == RIGHT)
+		v->map.images[67].img = v->map.images[39].img;
+	v->event = v->time + 5;
 }
 
 void	firing(int key, t_vars *v)
@@ -57,20 +84,32 @@ void	firing(int key, t_vars *v)
 	new = malloc(sizeof(t_tear));
 	if (!new)
 		return ;
-	if (key == 126)//up
+	if (key == 126)
 		new->s = UP;
-	else if (key == 123)//left
+	else if (key == 123)
 		new->s = LEFT;
-	else if (key == 125)//down
+	else if (key == 125)
 		new->s = DOWN;
-	else if (key == 124)//right
+	else if (key == 124)
 		new->s = RIGHT;
 	else
 		return ;
+	set_head(new->s, v);
 	new->duration = 0;
 	system("afplay sound/splatter0.wav &");
-	new->cp = new_pos((v->player.cp.x * 42) + 21, (v->player.cp.y * 42) + 21);
+	new->cp = new_pos((v->p.x) + 21, (v->p.y) + 21);
 	ft_lstadd_back(&(v->tears), ft_lstnew((void *)new));
+	v->map.images[7].img = v->map.images[8].img;
 }
 
-
+void	set_direction(t_vars *v, int keycode)
+{
+	if (keycode == 13)
+		v->direction = UP;
+	if (keycode == 0)
+		v->direction = LEFT;
+	if (keycode == 2)
+		v->direction = RIGHT;
+	if (keycode == 1)
+		v->direction = DOWN;
+}

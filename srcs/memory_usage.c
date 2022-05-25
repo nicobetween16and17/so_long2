@@ -36,3 +36,40 @@ t_position	new_pos(int x, int y)
 	pos.y = y;
 	return (pos);
 }
+
+int	collision_effect(t_position p, t_vars *v, int i)
+{
+	while (v->shits[++i].p.x != -1)
+	{
+		if (v->shits[i].p.x == p.x && v->shits[i].p.y == p.y)
+			v->shits[i].state -= 1;
+	}
+	return (1);
+}
+
+int	collision_pos(t_position obj, t_position larme, t_vars *v)
+{
+	if (obj.x + 42 > larme.x && obj.x < larme.x
+		&& obj.y + 42 > larme.y && obj.y < larme.y)
+		return (collision_effect(new_pos(obj.y / 42, obj.x / 42), v, -1));
+	if (larme.x < 21 || larme.y < 31)
+		return (1);
+	return (0);
+}
+
+int	collision(t_position current, t_vars *v, int i, int j)
+{
+	char **map;
+
+	map = v->map.map;
+	while (map[++i])
+	{
+		j = 0;
+		while (map[i][++j])
+		{
+			if (map[i][j] == '1' && collision_pos(new_pos(i * 42, j * 42), current, v))
+				return (1);
+		}
+	}
+	return (0);
+}

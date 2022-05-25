@@ -12,7 +12,7 @@
 
 #include "so_long.h"
 
-static int	ft_strlen(char *s)
+static int	ft_strlen2(char *s)
 {
 	int	i;
 
@@ -37,11 +37,11 @@ int	check_error(t_map *map)
 {
 	int	i;
 
-	map->width = ft_strlen(map->map[0]);
+	map->width = ft_strlen2(map->map[0]);
 	i = -1;
 	while (map->map[++i])
 	{
-		if (ft_strlen(map->map[i]) != map->width)
+		if (ft_strlen2(map->map[i]) != map->width)
 		{
 			free_map_array(map->map);
 			return (map_error());

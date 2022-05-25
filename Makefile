@@ -8,8 +8,6 @@ SRCFILES		=   ../ft_printf/ft_print_ptr.c\
                     ../ft_printf/ft_printf.c\
                     ../ft_printf/ft_printhex.c\
                     ../ft_printf/ft_utils.c\
-                    ../gnl/get_next_line.c\
-                    ../gnl/get_next_line_utils.c\
                     memory_usage.c\
                     controlls.c\
                     error_checking.c\
@@ -20,6 +18,8 @@ SRCFILES		=   ../ft_printf/ft_print_ptr.c\
                     battle.c\
                     lst.c\
                     hooks.c\
+                    util.c\
+                    utils2.c\
 
 
 SRCS			=	$(addprefix $(SRCDIR), $(SRCFILES))
