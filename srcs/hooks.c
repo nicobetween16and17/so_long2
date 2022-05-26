@@ -28,13 +28,13 @@ int	key_hook(int keycode, t_vars *vars)
 			&& vars->player.nb_collectibles == vars->map.nb_collectibles)
 		|| keycode == 53)
 	{
-
 		usleep(200000);
 		end_game(vars->map);
 		destroy(keycode, vars);
 	}
 	return (0);
 }
+
 void	image_moove(t_vars *v, int i, int frame)
 {
 	v->map.images[9].img = v->sprites[i - 1]->content;
@@ -75,7 +75,6 @@ void	handle_moove(t_vars *v, int i)
 	image_moove(v, i, v->player.mooving);
 	if (v->player.mooving >= 22)
 		v->player.mooving = 0;
-
 }
 
 void	set_vars(t_vars *v)
@@ -91,4 +90,5 @@ void	set_vars(t_vars *v)
 	init_all_sprites(v);
 	init_cacas(v, v->map.map, 0, 0);
 	init_flies(v, v->map.map, 0, 0);
+	v->last_pos = -1;
 }

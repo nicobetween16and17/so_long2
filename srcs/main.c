@@ -99,7 +99,8 @@ int	game_time(t_vars *v)
 {
 	static int	first;
 
-	if (!(v->time % 5000) || !first) {
+	if (!(v->time % 5000) || !first)
+	{
 		first++;
 		system("afplay sound/the_caves.wav -t 100 &");
 	}
@@ -128,7 +129,6 @@ int	main(int argc, char **argv)
 	vars.map.map = get_map(argv[1]);
 	if (!vars.map.map)
 		return (-1);
-	vars.last_pos = -1;
 	vars.map.nb_collectibles = nb_collectible(vars.map);
 	vars.map.exits = exits(vars.map.map);
 	if (check_error(&(vars.map)) == -1)

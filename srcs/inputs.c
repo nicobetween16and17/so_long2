@@ -124,5 +124,4 @@ void	handle_input(int keycode, t_map *map, t_player *player, t_vars *vars)
 	map->map[player->cp.x][player->cp.y] = 'P';
 	if (map->nb_collectibles == player->nb_collectibles && !final_sound++)
 		system("afplay sound/golden_key.wav &");
-
 }

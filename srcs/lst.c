@@ -55,24 +55,23 @@ t_list	*clean_tears(t_list *old, t_vars *v)
 
 void	init_sprites(t_vars *v, int start, int end, int lst)
 {
-	int	i;
+	int		i;
 	t_list	*new;
 
 	i = start -1;
 	new = ft_lstnew(v->map.images[++i].img);
-	while (++i <= end) {
+	while (++i <= end)
 		ft_lstadd_back(&new, ft_lstnew(v->map.images[i].img));
-	}
 	ft_lstadd_back(&new, new);
 	v->sprites[lst] = new;
 }
 
 void	init_all_sprites(t_vars *v)
 {
-	init_sprites(v, 9,12,0);
-	init_sprites(v, 9,12,1);
-	init_sprites(v, 35,38,2);
-	init_sprites(v, 31,34,3);
-	init_sprites(v, 7,8,4);
-	init_sprites(v, 62,66, 5);
+	init_sprites(v, 9, 12, 0);
+	init_sprites(v, 9, 12, 1);
+	init_sprites(v, 35, 38, 2);
+	init_sprites(v, 31, 34, 3);
+	init_sprites(v, 7, 8, 4);
+	init_sprites(v, 62, 66, 5);
 }

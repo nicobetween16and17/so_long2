@@ -45,10 +45,9 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 	}
 	v->tears = start;
 	v->tears = clean_tears(start, v);
-
 }
 
-void	set_head(e_sens d, t_vars *v)
+void	set_head(t_sens d, t_vars *v)
 {
 	if (d == UP)
 		v->map.images[7].img = v->map.images[40].img;

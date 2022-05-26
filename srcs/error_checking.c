@@ -60,7 +60,8 @@ int	check_error(t_map *map)
 		return (no_exit_error());
 	return (1);
 }
-int init_game2(t_player *player)
+
+int	init_game2(t_player *player)
 {
 	player->nb_mooves = 0;
 	player->nb_collectibles = 0;

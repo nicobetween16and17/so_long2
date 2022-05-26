@@ -52,7 +52,6 @@ void	init_cacas(t_vars *v, char **map, int nb_shits, int i_shit)
 		}
 	}
 	v->shits[i_shit].p.x = -1;
-
 }
 
 void	nb_flie(char **map, int *nb_flies)
@@ -94,7 +93,6 @@ void	init_flies(t_vars *v, char **map, int nb_flies, int i_fly)
 		}
 	}
 	v->flies[i_fly].hp = -1;
-
 }
 
 void	set_player_pos(t_vars *v)

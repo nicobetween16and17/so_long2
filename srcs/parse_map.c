@@ -46,10 +46,8 @@ char	*lines(char *path, int BUFFER)
 char	**get_map(char *path)
 {
 	char	**map;
-	int		i;
 	char	*macro;
 
-	i = 0;
 	macro = lines(path, buffer(path));
 	if (!macro)
 		return (NULL);

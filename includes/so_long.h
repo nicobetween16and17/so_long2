@@ -32,7 +32,7 @@ typedef enum e_sens{
 	DOWN,
 	LEFT,
 	RIGHT,
-}	e_sens;
+}	t_sens;
 
 typedef struct s_position
 {
@@ -43,25 +43,25 @@ typedef struct s_position
 typedef struct s_caca
 {
 	t_position	p;
-	int 		state;
+	int			state;
 }	t_caca;
 
 typedef struct s_fly
 {
 	t_position	p;
-	int 		hp;
+	int			hp;
 	t_position	h;
 }	t_fly;
 
 typedef struct s_timer {
 	int	s;
 	int	m;
-	int h;
+	int	h;
 }	t_timer;
 
 typedef struct s_tear{
 	t_position	cp;
-	e_sens		s;
+	t_sens		s;
 	int			duration;
 }	t_tear;
 
@@ -91,7 +91,7 @@ typedef struct s_player
 	int			nb_collectibles;
 	t_position	cp;
 	int			nb_mooves;
-	int 		hp;
+	int			hp;
 	int			mooving;
 }	t_player;
 
@@ -103,10 +103,10 @@ typedef struct s_vars {
 	t_list		*tears;
 	t_timer		timer;
 	int			time;
-	int 		last_pos;
+	int			last_pos;
 	t_list		*sprites[15];
 	t_position	p;
-	e_sens		direction;
+	t_sens		direction;
 	t_caca		*shits;
 	t_fly		*flies;
 	int			event;
@@ -177,10 +177,11 @@ int			map_error(void);
 int			wall_error(void);
 int			argument_error(void);
 void		free_map_array(char **map);
-int 		check_error(t_map *map);
-int 		init_game(t_player *player, t_map map);
-void		handle_input(int keycode, t_map *map, t_player *player, t_vars *vars);
-void 		end_game(t_map map);
+int			check_error(t_map *map);
+int			init_game(t_player *player, t_map map);
+void		handle_input(int keycode,
+				t_map *map, t_player *player, t_vars *vars);
+void		end_game(t_map map);
 void		display_map(t_vars *vars, char **map);
 int			random_in_range(int a, int range, int start);
 void		ft_bzero(void *b, size_t length);
@@ -204,7 +205,8 @@ void		put_hp(t_vars *v);
 int			put_shit(t_vars *v, t_position p, int i);
 void		put_timer(t_vars *v);
 void		put_mooves(int nb, t_vars *v);
-void		enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int));
+void		enemies_travel(t_vars *v,
+				int (*f)(void *, void *, void *, int, int));
 void		nb_shit(t_vars *v, char **map, int *nb_shits);
 void		init_cacas(t_vars *v, char **map, int nb_shits, int i_shit);
 void		nb_flie(char **map, int *nb_flies);
