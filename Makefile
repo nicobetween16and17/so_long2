@@ -2,9 +2,11 @@ NAME			=	so_long
 
 SRCDIR 			=	srcs/
 
+SRCDIRBONUS 	=	srcs/
+
 INCDIR			=	includes/
 
-SRCFILES		=   ../ft_printf/ft_print_ptr.c\
+SRCBONUS		=   ../ft_printf/ft_print_ptr.c\
                     ../ft_printf/ft_printf.c\
                     ../ft_printf/ft_printhex.c\
                     ../ft_printf/ft_utils.c\
@@ -21,9 +23,13 @@ SRCFILES		=   ../ft_printf/ft_print_ptr.c\
                     util.c\
                     utils2.c\
                     init.c\
+                    utils3.c\
 
+SRC             =
 
-SRCS			=	$(addprefix $(SRCDIR), $(SRCFILES))
+SRCSBONUS			=	$(addprefix $(SRCDIRBONUS), $(SRCBONUS))
+
+SRCSBONUS			=	$(addprefix $(SRCDIRBONUS), $(SRCBONUS))
 
 OBJS			=	$(SRCS:.c=.o)
 
@@ -42,12 +48,16 @@ all:		$(NAME)
 $(NAME):	$(SRCS) $(OBJS)
 			$(CC) $(CFLAGS) libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit $(OBJS) -o $(NAME)
 
+bonus:		$(NAMEB)
+
+$(NAMEB):	$(SRCSBONUS) $(OBJS)
+			$(CC) $(CFLAGS) libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit $(OBJS) -o $(NAME)
+
 %.o:		%.c
 			$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 			rm -f $(OBJS)
-			rm -f $(OBJS_TEST)
 
 fclean:		clean
 			rm -f $(NAME)

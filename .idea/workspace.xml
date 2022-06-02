@@ -31,12 +31,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/utils3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/niespana.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wcorner_DL.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wcorner_DR.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wcorner_UL.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wcorner_UR.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/collectible.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/corner_DL.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/corner_DR.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/corner_UL.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/corner_UR.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exit_close.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exit_open.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/game_over_menu.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/i_floor_d.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/i_floor_l.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/i_floor_r.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/i_floor_u.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/looking_l.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/looking_r.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/looking_u.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/standing_d.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall_down.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall_left.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall_right.xpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wall_up.xpm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/tentweny.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/tentweny.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/angry gurgle 1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/the caves.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/battle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/hooks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/memory_usage.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/memory_usage.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/util.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
@@ -72,21 +108,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/img/boir" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/includes" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/img/boir" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,6 +133,10 @@
       <workItem from="1653089519775" duration="4508000" />
       <workItem from="1653098710518" duration="1653000" />
       <workItem from="1653448828453" duration="21719000" />
+      <workItem from="1653631001104" duration="16868000" />
+      <workItem from="1653653885108" duration="3746000" />
+      <workItem from="1653897850136" duration="14544000" />
+      <workItem from="1654158144274" duration="2998000" />
     </task>
     <servers />
   </component>
@@ -123,18 +156,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653058457167">
+    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653631202586">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1653058457167" />
+    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1653631202586" />
     <state x="252" y="330" key="SettingsEditor" timestamp="1653053942527">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1613" y="23" width="934" height="1331" key="dock-window-1" timestamp="1653462929410">
+    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1" timestamp="1654158453194">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1613" y="23" width="934" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1653462929410" />
+    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654158453194" />
     <state x="1665" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1653099092306" />
     <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
       <screen x="0" y="23" width="2560" height="1337" />
@@ -144,5 +177,9 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="405" y="326" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1652790142351" />
+    <state x="1706" y="326" width="670" height="676" key="search.everywhere.popup" timestamp="1653904347229">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1706" y="326" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1653904347229" />
   </component>
 </project>

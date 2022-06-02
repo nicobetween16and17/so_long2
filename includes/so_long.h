@@ -80,7 +80,7 @@ typedef struct s_map
 	char		**map;
 	int			nb_collectibles;
 	t_position	*exits;
-	t_data		*images;
+	t_data		images[63];
 	int			height;
 	int			width;
 	int			data_size;
@@ -111,6 +111,10 @@ typedef struct s_vars {
 	t_fly		*flies;
 	int			event;
 	int			t;
+	int			last_frame;
+	int			nb_tears;
+	int			immune;
+	int			dead;
 }	t_vars;
 
 typedef struct s_args
@@ -191,10 +195,9 @@ t_position	new_pos(int x, int y);
 void		vars_ui_timer(t_vars *vars);
 void		duration_plus_one(void *arg);
 void		position_shift(void *arg);
-t_list		*clean_tears(t_list *old, t_vars *v);
 void		tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int));
 void		firing(int key, t_vars *v);
-int			destroy(int keycode, t_vars *vars);
+int			destroy(t_vars *vars);
 int			key_hook(int keycode, t_vars *vars);
 void		handle_moove(t_vars *v, int i);
 void		set_direction(t_vars *v, int keycode);
@@ -212,5 +215,9 @@ void		init_cacas(t_vars *v, char **map, int nb_shits, int i_shit);
 void		nb_flie(char **map, int *nb_flies);
 void		init_flies(t_vars *v, char **map, int nb_flies, int i_fly);
 void		set_player_pos(t_vars *v);
+void		free_sprites(t_vars *v);
+int			damaging(t_vars *v, t_tear *crt);
+void		take_damage(t_vars *v, int i);
+void		death_screen(t_vars *v);
 
 #endif
