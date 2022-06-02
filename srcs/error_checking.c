@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: niespana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 16:18:03 by niespana          #+#    #+#             */
-/*   Updated: 2022/05/03 16:18:04 by niespana         ###   ########.fr       */
+/*   Created: 2022/06/02 12:58:49 by niespana          #+#    #+#             */
+/*   Updated: 2022/06/02 12:58:50 by niespana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ int	init_game2(t_player *player)
 {
 	player->nb_mooves = 0;
 	player->nb_collectibles = 0;
-	player->hp = 3;
 	return (1);
 }
 

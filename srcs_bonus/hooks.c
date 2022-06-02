@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int	destroy(t_vars *vars)
 {
-	ft_printf("endgame\n");
 	system("ps -a|grep afplay|grep -v 'grep'|awk '{print $1}'|xargs kill -15");
 	if (vars->dead)
 		system("afplay sound/isaac_dies_new.wav ");
@@ -24,7 +23,6 @@ int	destroy(t_vars *vars)
 		free(vars->shits);
 	if (vars->win)
 		mlx_destroy_window(vars->mlx, vars->win);
-	//system("leaks so_long");
 	exit(0);
 }
 

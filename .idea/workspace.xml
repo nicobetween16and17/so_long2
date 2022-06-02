@@ -31,51 +31,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/utils3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/niespana.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/errors_displayed.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/parse_map.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/utils1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Wcorner_DL.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Wcorner_DR.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Wcorner_UL.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Wcorner_UR.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/collectible.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/corner_DL.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/corner_DR.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/corner_UL.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/corner_UR.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exit_close.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exit_open.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/game_over_menu.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i_floor_d.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i_floor_l.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i_floor_r.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i_floor_u.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/looking_l.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/looking_r.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/looking_u.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/standing_d.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wall_down.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wall_left.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wall_right.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wall_up.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/tentweny.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/tentweny.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/angry gurgle 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/the caves.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/battle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/hooks.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/lst.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/memory_usage.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/memory_usage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/util.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/controlls.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/hooks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +123,8 @@
       <workItem from="1653631001104" duration="16868000" />
       <workItem from="1653653885108" duration="3746000" />
       <workItem from="1653897850136" duration="14544000" />
-      <workItem from="1654158144274" duration="2998000" />
+      <workItem from="1654158144274" duration="6796000" />
+      <workItem from="1654173947271" duration="1547000" />
     </task>
     <servers />
   </component>
@@ -164,10 +152,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1" timestamp="1654158453194">
+    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1" timestamp="1654174270505">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654158453194" />
+    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654174270505" />
     <state x="1665" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1653099092306" />
     <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
       <screen x="0" y="23" width="2560" height="1337" />

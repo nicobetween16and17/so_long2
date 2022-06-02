@@ -5,38 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: niespana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 10:12:45 by niespana          #+#    #+#             */
-/*   Updated: 2022/05/03 10:12:45 by niespana         ###   ########.fr       */
+/*   Created: 2022/06/02 12:59:06 by niespana          #+#    #+#             */
+/*   Updated: 2022/06/02 12:59:07 by niespana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long.h"
-
-void	data_init3(t_map *m, int w, int h, void *mlx)
-{
-	m->images[37].img = mlx_xpm_file_to_image(mlx, "img/poop_f2.xpm", &w, &h);
-	m->images[38].img = mlx_xpm_file_to_image(mlx, "img/poop_f3.xpm", &w, &h);
-	m->images[39].img = mlx_xpm_file_to_image(mlx, "img/poop_f4.xpm", &w, &h);
-	m->images[40].img = mlx_xpm_file_to_image(mlx, "img/poop_f5.xpm", &w, &h);
-	m->images[41].img = mlx_xpm_file_to_image(mlx, "img/head1.xpm", &w, &h);
-	m->images[42].img = mlx_xpm_file_to_image(mlx, "img/head2.xpm", &w, &h);
-	m->images[43].img = mlx_xpm_file_to_image(mlx, "img/0.xpm", &w, &h);
-	m->images[44].img = mlx_xpm_file_to_image(mlx, "img/1.xpm", &w, &h);
-	m->images[45].img = mlx_xpm_file_to_image(mlx, "img/2.xpm", &w, &h);
-	m->images[46].img = mlx_xpm_file_to_image(mlx, "img/3.xpm", &w, &h);
-	m->images[47].img = mlx_xpm_file_to_image(mlx, "img/4.xpm", &w, &h);
-	m->images[48].img = mlx_xpm_file_to_image(mlx, "img/5.xpm", &w, &h);
-	m->images[49].img = mlx_xpm_file_to_image(mlx, "img/6.xpm", &w, &h);
-	m->images[50].img = mlx_xpm_file_to_image(mlx, "img/7.xpm", &w, &h);
-	m->images[51].img = mlx_xpm_file_to_image(mlx, "img/8.xpm", &w, &h);
-	m->images[52].img = mlx_xpm_file_to_image(mlx, "img/9.xpm", &w, &h);
-	m->images[53].img = mlx_xpm_file_to_image(mlx, "img/2point.xpm", &w, &h);
-	m->images[54].img = mlx_xpm_file_to_image(mlx, "img/fly_1.xpm", &w, &h);
-	m->images[55].img = mlx_xpm_file_to_image(mlx, "img/fly_2.xpm", &w, &h);
-	m->images[56].img = mlx_xpm_file_to_image(mlx, "img/fly_3.xpm", &w, &h);
-	m->images[57].img = mlx_xpm_file_to_image(mlx, "img/fly_4.xpm", &w, &h);
-	m->images[58].img = mlx_xpm_file_to_image(mlx, "img/fly_5.xpm", &w, &h);
-}
 
 void	data_init2(t_map *m, int w, int h, void *mlx)
 {
@@ -63,7 +37,6 @@ void	data_init2(t_map *m, int w, int h, void *mlx)
 	m->images[34].img = mlx_xpm_file_to_image(mlx, "img/head8.xpm", &w, &h);
 	m->images[35].img = mlx_xpm_file_to_image(mlx, "img/head4.xpm", &w, &h);
 	m->images[36].img = mlx_xpm_file_to_image(mlx, "img/head6.xpm", &w, &h);
-	data_init3(m, w, h, mlx);
 }
 
 void	data_init(t_map *m, int w, int h, void *mlx)
@@ -88,57 +61,51 @@ void	data_init(t_map *m, int w, int h, void *mlx)
 	data_init2(m, w, h, mlx);
 }
 
-int	game_time(t_vars *v)
+int	destroy(t_vars *vars)
 {
-	static int	first;
+	ft_printf("endgame\n");
+	if (vars->win)
+		mlx_destroy_window(vars->mlx, vars->win);
+	exit(0);
+}
 
-	if (!(v->time % 500000) || !first)
+int	key_hook(int keycode, t_vars *vars)
+{
+	handle_input(keycode, &(vars->map), &(vars->player), vars);
+	if ((is_exit(vars->player.cp, vars->map.exits)
+			&& vars->player.nb_collectibles == vars->map.nb_collectibles)
+		|| keycode == 53)
 	{
-		first++;
-		system("afplay sound/the_caves.wav -t 100 &");
+		end_game(vars->map);
+		destroy(vars);
 	}
-	if (!v->immune)
-		take_damage(v, -1);
-	display_map(v, v->map.map);
-	usleep(10000);
-	if (!(v->time++ % 50))
-		vars_ui_timer(v);
-	if (v->time > v->immune)
-		v->immune = 0;
-	if (!(v->time % 3))
-		v->sprites[5] = v->sprites[5]->next;
-	if (!v->dead && v->event == v->time && v->event > 0)
-		v->map.images[2] = v->map.images[59];
-	if (v->event == v->time && v->dead)
-		destroy(v);
 	return (0);
 }
 
 int	main(int argc, char **argv)
 {
-	t_vars		vars;
+	t_vars		v;
 
 	if (argc != 2)
 		return (argument_error());
-	vars.map.map = get_map(argv[1]);
-	if (!vars.map.map)
+	v.map.map = get_map(argv[1]);
+	if (!v.map.map)
 		return (-1);
-	vars.map.nb_collectibles = nb_collectible(vars.map);
-	vars.map.exits = exits(vars.map.map);
-	if (check_error(&(vars.map)) == -1)
+	v.map.nb_collectibles = nb_collectible(v.map);
+	v.map.exits = exits(v.map.map);
+	if (check_error(&(v.map)) == -1)
 		return (-1);
-	vars.map.data_size = 42;
-	if (init_game(&vars.player, vars.map) == -1)
+	v.map.data_size = 42;
+	if (init_game(&v.player, v.map) == -1)
 		return (-1);
-	vars.mlx = mlx_init();
-	vars.win = mlx_new_window(vars.mlx, vars.map.width * vars.map.data_size,
-			vars.map.height * vars.map.data_size, "so_long");
-	data_init(&vars.map,
-		vars.map.data_size, vars.map.data_size, vars.mlx);
-	set_vars(&vars);
-	mlx_loop_hook(vars.mlx, game_time, &vars);
-	mlx_hook(vars.win, 17, 0, destroy, &vars);
-	mlx_hook(vars.win, 2, 0, key_hook, &vars);
-	mlx_loop(vars.mlx);
+	v.last_pos = '0';
+	v.mlx = mlx_init();
+	v.win = mlx_new_window(v.mlx, v.map.width * v.map.data_size,
+			v.map.height * v.map.data_size, "so_long");
+	data_init(&v.map, v.map.data_size, v.map.data_size, v.mlx);
+	display_map(&v, v.map.map);
+	mlx_hook(v.win, 17, 0, destroy, &v);
+	mlx_hook(v.win, 2, 0, key_hook, &v);
+	mlx_loop(v.mlx);
 	return (0);
 }

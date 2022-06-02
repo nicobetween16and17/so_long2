@@ -1,36 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   controlls.c                                        :+:      :+:    :+:   */
+/*   utils2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: niespana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 10:12:38 by niespana          #+#    #+#             */
-/*   Updated: 2022/05/03 10:12:39 by niespana         ###   ########.fr       */
+/*   Created: 2022/06/02 13:35:59 by niespana          #+#    #+#             */
+/*   Updated: 2022/06/02 13:36:00 by niespana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long.h"
-
-int	possible_moove(int key, char **map, t_position pos)
-{
-	if (key == 13)
-		return (map[pos.x - 1][pos.y] != '1');
-	if (key == 0)
-		return (map[pos.x][pos.y - 1] != '1');
-	if (key == 2)
-		return (map[pos.x][pos.y + 1] != '1');
-	if (key == 1)
-		return (map[pos.x + 1][pos.y] != '1');
-	return (0);
-}
-
-int	put_it(t_vars *vars, t_position pos, int img)
-{
-	mlx_put_image_to_window(vars->mlx, vars->win, vars->map.images[img].img,
-		pos.x * vars->map.data_size, pos.y * vars->map.data_size);
-	return (1);
-}
 
 static int	nb_exit(char **map)
 {
