@@ -31,38 +31,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/errors_displayed.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/parse_map.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/utils1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/controlls.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/hooks.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/init.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +94,7 @@
       <workItem from="1653653885108" duration="3746000" />
       <workItem from="1653897850136" duration="14544000" />
       <workItem from="1654158144274" duration="6796000" />
-      <workItem from="1654173947271" duration="1547000" />
+      <workItem from="1654173947271" duration="10907000" />
     </task>
     <servers />
   </component>
