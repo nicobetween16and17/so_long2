@@ -32,7 +32,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/hooks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils3.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -73,6 +80,13 @@
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/img/boir" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +108,9 @@
       <workItem from="1653653885108" duration="3746000" />
       <workItem from="1653897850136" duration="14544000" />
       <workItem from="1654158144274" duration="6796000" />
-      <workItem from="1654173947271" duration="10907000" />
+      <workItem from="1654173947271" duration="11733000" />
+      <workItem from="1654257200296" duration="334000" />
+      <workItem from="1654266290496" duration="9015000" />
     </task>
     <servers />
   </component>
@@ -122,11 +138,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1" timestamp="1654174270505">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="1626" y="23" width="1203" height="1511" key="dock-window-1" timestamp="1654269510675">
+      <screen x="0" y="23" width="2880" height="1517" />
     </state>
     <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654174270505" />
-    <state x="1665" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1653099092306" />
+    <state x="1626" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654269510675" />
     <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

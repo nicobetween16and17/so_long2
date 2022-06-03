@@ -71,8 +71,8 @@ void	take_damage(t_vars *v, int i)
 {
 	while (v->flies[++i].h.x > -1)
 	{
-		if (v->flies[i].h.y - 20 < v->p.x && v->flies[i].h.y + 20 > v->p.x
-			&& v->flies[i].h.x - 20 < v->p.y && v->flies[i].h.x + 20 > v->p.y
+		if (v->flies[i].h.y - 15 < v->p.x && v->flies[i].h.y + 15 > v->p.x
+			&& v->flies[i].h.x - 15 < v->p.y && v->flies[i].h.x + 15 > v->p.y
 			&& v->flies[i].hp > 0 && !v->immune)
 		{
 			system("afplay sound/baby_hurt_1.wav &");

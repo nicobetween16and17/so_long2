@@ -76,6 +76,10 @@ void	display_map(t_vars *v, char **map)
 		v->p.y + 6, v->p.x);
 	enemies_travel(v, mlx_put_image_to_window);
 	tear_travel(v, mlx_put_image_to_window);
+	if (v->time < 150)
+		mlx_string_put(v->mlx, v->win, (v->map.width * 42) / 2 - 150,
+			(v->map.height * 42) / 2, 6493952,
+			"up/down/right/left\n to shoot !");
 	death_screen(v);
 }
 
@@ -106,7 +110,8 @@ void	handle_input(int keycode, t_map *map, t_player *player, t_vars *vars)
 {
 	static int	final_sound;
 
-	firing(keycode, vars);
+	if (!vars->fire_rate)
+		firing(keycode, vars);
 	if (!possible_moove(keycode, map->map, player->cp)
 		|| (player->mooving > 0 && player->mooving <= 22))
 		return ;

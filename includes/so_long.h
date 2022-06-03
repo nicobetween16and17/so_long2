@@ -115,6 +115,8 @@ typedef struct s_vars {
 	int			nb_tears;
 	int			immune;
 	int			dead;
+	int			fire_rate;
+	int			delay;
 }	t_vars;
 
 typedef struct s_args

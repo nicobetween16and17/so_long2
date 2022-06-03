@@ -92,11 +92,13 @@ int	game_time(t_vars *v)
 {
 	static int	first;
 
-	if (!(v->time % 500000) || !first)
+	if (!(v->time % 4870) || !first)
 	{
 		first++;
 		system("afplay sound/the_caves.wav -t 100 &");
 	}
+	if (v->fire_rate <= v->time)
+		v->fire_rate = 0;
 	if (!v->immune)
 		take_damage(v, -1);
 	display_map(v, v->map.map);

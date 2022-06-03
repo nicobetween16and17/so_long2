@@ -65,7 +65,7 @@ int	init_game2(t_player *player)
 {
 	player->nb_mooves = 0;
 	player->nb_collectibles = 0;
-	player->hp = 3;
+	player->hp = 6;
 	return (1);
 }
 

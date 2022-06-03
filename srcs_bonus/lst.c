@@ -52,8 +52,8 @@ void	init_all_sprites(t_vars *v)
 {
 	init_sprites(v, 4, 7, 0);
 	init_sprites(v, 4, 7, 1);
-	init_sprites(v, 27, 30, 2);
-	init_sprites(v, 23, 26, 3);
+	init_sprites(v, 28, 30, 2);
+	init_sprites(v, 24, 26, 3);
 	init_sprites(v, 2, 3, 4);
 	init_sprites(v, 54, 58, 5);
 	v->sprites[6] = NULL;

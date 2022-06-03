@@ -41,7 +41,14 @@ int	key_hook(int keycode, t_vars *vars)
 
 void	image_moove(t_vars *v, int i, int frame)
 {
+	if (i <= 0)
+		return ;
 	v->map.images[4].img = v->sprites[i - 1]->content;
+	if (v->delay < v->time && !frame)
+	{
+		v->map.images[4].img = v->map.images[23].img;
+		return ;
+	}
 	v->sprites[i - 1] = v->sprites[i - 1]->next;
 	if (i - 1 == 0)
 		v->map.images[2].img = v->map.images[32].img;
@@ -59,14 +66,17 @@ void	image_moove(t_vars *v, int i, int frame)
 		v->map.images[2].img = v->map.images[31].img;
 	if (i - 1 == 3)
 		v->map.images[3].img = v->map.images[35].img;
-	if (frame >= 22)
-		v->map.images[4].img = v->map.images[23].img;
 }
 
 void	handle_moove(t_vars *v, int i)
 {
+	static int	last;
+
 	if (!v->player.mooving || v->last_frame)
+	{
+		image_moove(v, last, v->player.mooving);
 		return ;
+	}
 	v->player.mooving += 2;
 	if (v->direction == UP)
 		v->p.x -= 4;
@@ -76,9 +86,11 @@ void	handle_moove(t_vars *v, int i)
 		v->p.y -= 4;
 	else if (i++ && v->direction == RIGHT)
 		v->p.y += 4;
+	last = i;
 	image_moove(v, i, v->player.mooving);
 	if (v->player.mooving >= 22)
 	{
+		v->delay = v->time + 5;
 		v->player.mooving = 0;
 	}
 }
@@ -99,4 +111,6 @@ void	set_vars(t_vars *v)
 	v->last_pos = -1;
 	v->nb_tears = 0;
 	v->dead = 0;
+	v->fire_rate = 0;
+	v->delay = 0;
 }

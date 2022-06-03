@@ -45,6 +45,8 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 			t->cp = new_pos(-50, -50);
 		if (t->duration <= 15)
 			f(v->mlx, v->win, v->map.images[22].img, t->cp.y, t->cp.x);
+		else
+			t->cp = new_pos(-50, -50);
 		v->tears = v->tears->next;
 	}
 	v->tears = start;
@@ -83,6 +85,7 @@ void	firing(int key, t_vars *v)
 {
 	t_tear		*new;
 
+	v->fire_rate = v->time + 8;
 	if (key != 126 && key != 123 && key != 124 && key != 125)
 		return ;
 	new = malloc(sizeof(t_tear));
@@ -97,7 +100,6 @@ void	firing(int key, t_vars *v)
 	else if (key == 124)
 		new->s = RIGHT;
 	v->nb_tears++;
-	ft_printf("%de tir\n", v->nb_tears);
 	set_head(new->s, v);
 	new->duration = 0;
 	system("afplay sound/splatter0.wav &");
