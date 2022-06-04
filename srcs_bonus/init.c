@@ -73,6 +73,7 @@ void	nb_flie(char **map, int *nb_flies)
 void	init_flies(t_vars *v, char **map, int nb_flies, int i_fly)
 {
 	t_position	pos;
+	static int	first;
 
 	nb_flie(map, &nb_flies);
 	v->flies = malloc(sizeof(t_fly) * (nb_flies + 1));
@@ -89,7 +90,8 @@ void	init_flies(t_vars *v, char **map, int nb_flies, int i_fly)
 				v->flies[i_fly].p = pos;
 				v->flies[i_fly].h = new_pos(pos.x * 42, pos.y * 42);
 				v->flies[i_fly++].hp = 6;
-				system("afplay sound/summonsound.wav &");
+				if (!first++)
+					system("afplay sound/summonsound.wav &");
 			}
 		}
 	}

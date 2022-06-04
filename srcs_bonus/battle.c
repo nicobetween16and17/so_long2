@@ -44,7 +44,9 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 		if (collision(t->cp, v, 0, 0))
 			t->cp = new_pos(-50, -50);
 		if (t->duration <= 15)
+		{
 			f(v->mlx, v->win, v->map.images[22].img, t->cp.y, t->cp.x);
+		}
 		else
 			t->cp = new_pos(-50, -50);
 		v->tears = v->tears->next;

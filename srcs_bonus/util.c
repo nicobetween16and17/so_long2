@@ -20,15 +20,15 @@ void	put_hp(t_vars *v)
 	pos.x = 1;
 	while (++pos.y < v->player.hp / 2)
 		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[19].img, 15 * pos.x++, 10);
+			v->map.images[19].img, 15 * pos.x++ + 25, 42);
 	pos.y = -1;
 	while (++pos.y < v->player.hp % 2)
 		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[20].img, 15 * pos.x++, 10);
+			v->map.images[20].img, 15 * pos.x++ + 25, 42);
 	pos.y = -1;
 	while (++pos.y < 3 - ((v->player.hp % 2) + (v->player.hp / 2)))
 		mlx_put_image_to_window(v->mlx, v->win,
-			v->map.images[21].img, 15 * pos.x++, 10);
+			v->map.images[21].img, 15 * pos.x++ + 25, 42);
 }
 
 int	put_shit(t_vars *v, t_position p, int i)
@@ -66,14 +66,14 @@ int	put_it2(t_vars *vars, t_position pos, int img)
 
 void	put_timer(t_vars *v)
 {
-	put_it2(v, new_pos(140, 10), 53);
-	put_it2(v, new_pos(160, 10), 43 + v->timer.s % 10);
-	put_it2(v, new_pos(150, 10), 43 + v->timer.s / 10);
-	put_it2(v, new_pos(130, 10), 43 + v->timer.m % 10);
-	put_it2(v, new_pos(120, 10), 43 + v->timer.m / 10);
-	put_it2(v, new_pos(110, 10), 53);
-	put_it2(v, new_pos(100, 10), 43 + v->timer.h % 10);
-	put_it2(v, new_pos(90, 10), 43 + v->timer.h / 10);
+	put_it2(v, new_pos(192, 42), 53);
+	put_it2(v, new_pos(202, 42), 43 + v->timer.s % 10);
+	put_it2(v, new_pos(192, 42), 43 + v->timer.s / 10);
+	put_it2(v, new_pos(172, 42), 43 + v->timer.m % 10);
+	put_it2(v, new_pos(162, 42), 43 + v->timer.m / 10);
+	put_it2(v, new_pos(152, 42), 53);
+	put_it2(v, new_pos(142, 42), 43 + v->timer.h % 10);
+	put_it2(v, new_pos(132, 42), 43 + v->timer.h / 10);
 }
 
 void	put_mooves(int nb, t_vars *v)
@@ -88,7 +88,7 @@ void	put_mooves(int nb, t_vars *v)
 	}
 	else
 	{
-		put_it2(v, new_pos(10 + v->t, 1), n + 43);
+		put_it2(v, new_pos(42 + v->t, 62), n + 43);
 		v->t += 10;
 	}
 }

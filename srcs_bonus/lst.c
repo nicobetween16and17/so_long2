@@ -58,3 +58,4 @@ void	init_all_sprites(t_vars *v)
 	init_sprites(v, 54, 58, 5);
 	v->sprites[6] = NULL;
 }
+

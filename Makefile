@@ -26,6 +26,7 @@ SRCBONUS		=   ../ft_printf/ft_print_ptr.c\
                     utils2.c\
                     init.c\
                     utils3.c\
+                    utils4.c\
 
 SRC				=   ../ft_printf/ft_print_ptr.c\
                     ../ft_printf/ft_printf.c\

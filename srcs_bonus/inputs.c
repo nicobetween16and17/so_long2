@@ -12,74 +12,70 @@
 
 #include "../includes/so_long.h"
 
-int	set_image2(t_vars *vars, t_position pos, char c)
+int	set_image2(t_vars *v, t_position pos, char c)
 {
 	if (c == '1' && pos.x == 0)
-		return (put_it(vars, pos, 15));
-	if (c == '1' && pos.x == vars->map.width - 1)
-		return (put_it(vars, pos, 16));
+		return (put_it(v, pos, 15));
+	if (c == '1' && pos.x == v->map.width - 1)
+		return (put_it(v, pos, 16));
 	if (c == '1' && pos.y == 0)
-		return (put_it(vars, pos, 13));
-	if (c == '1' && pos.y == vars->map.height - 1)
-		return (put_it(vars, pos, 14));
-	if (c == '1' && put_shit(vars, pos, -1))
+		return (put_it(v, pos, 13));
+	if (c == '1' && pos.y == v->map.height - 1)
+		return (put_it(v, pos, 14));
+	if (c == '1' && put_shit(v, pos, -1))
 		return (1);
 	if (c == 'M')
-		return (put_it(vars, pos, 40));
+		return (put_it(v, pos, 40));
 	if (c == '0')
-		return (put_it(vars, pos, 1));
-	if (c == 'E' && vars->player.nb_collectibles == vars->map.nb_collectibles)
-		return (put_it(vars, pos, 12));
-	if (c == 'E' && vars->player.nb_collectibles != vars->map.nb_collectibles)
-		return (put_it(vars, pos, 18));
+		return (put_it(v, pos, 1));
+	if (c == 'E' && v->player.nb_collectibles == v->map.nb_collectibles)
+		return (put_it(v, pos, 12));
+	if (c == 'E' && v->player.nb_collectibles != v->map.nb_collectibles)
+		return (put_it(v, pos, 18));
 	if (c == 'C')
-		return (put_it(vars, pos, 17));
+		return (put_it(v, pos, 17));
 	return (1);
 }
 
-int	set_image(t_vars *vars, t_position pos, char c)
+int	set_image(t_vars *v, t_position pos, char c)
 {
-	put_it(vars, pos, 1);
-	if (c == 'P' && vars->last_pos != -1)
-		set_image(vars, pos, vars->last_pos);
+	put_it(v, pos, 1);
+	if (c == 'P' && v->last_pos != -1)
+		set_image(v, pos, v->last_pos);
 	if (c == '1' && pos.x == 0 && pos.y == 0)
-		return (put_it(vars, pos, 8));
-	if (c == '1' && pos.x == 0 && pos.y == vars->map.height - 1)
-		return (put_it(vars, pos, 10));
-	if (c == '1' && pos.x == vars->map.width - 1 && pos.y == 0)
-		return (put_it(vars, pos, 9));
-	if (c == '1' && pos.x == vars->map.width - 1
-		&& pos.y == vars->map.height - 1)
-		return (put_it(vars, pos, 11));
-	return (set_image2(vars, pos, c));
+		return (put_it(v, pos, 8));
+	if (c == '1' && pos.x == 0 && pos.y == v->map.height - 1)
+		return (put_it(v, pos, 10));
+	if (c == '1' && pos.x == v->map.width - 1 && pos.y == 0)
+		return (put_it(v, pos, 9));
+	if (c == '1' && pos.x == v->map.width - 1
+		&& pos.y == v->map.height - 1)
+		return (put_it(v, pos, 11));
+	return (set_image2(v, pos, c));
 }
 
-void	display_map(t_vars *v, char **map)
+void	display_map(t_vars *v)
 {
 	t_position	pos;
 
-	handle_moove(v, 1);
 	pos.y = -1;
-	while (map[++pos.y])
+	while (v->map.map[++pos.y])
 	{
 		pos.x = -1;
-		while (map[pos.y][++pos.x])
-			set_image(v, pos, map[pos.y][pos.x]);
+		while (v->map.map[pos.y][++pos.x])
+			set_image(v, pos, v->map.map[pos.y][pos.x]);
 	}
+	handle_moove(v, 1);
 	put_hp(v);
 	put_timer(v);
 	v->t = 0;
 	put_mooves(v->player.nb_mooves, v);
+	enemies_travel(v, mlx_put_image_to_window);
+	tear_travel(v, mlx_put_image_to_window);
 	mlx_put_image_to_window(v->mlx, v->win, v->map.images[4].img,
 		v->p.y + 6, v->p.x + 20);
 	mlx_put_image_to_window(v->mlx, v->win, v->map.images[2].img,
 		v->p.y + 6, v->p.x);
-	enemies_travel(v, mlx_put_image_to_window);
-	tear_travel(v, mlx_put_image_to_window);
-	if (v->time < 150)
-		mlx_string_put(v->mlx, v->win, (v->map.width * 42) / 2 - 150,
-			(v->map.height * 42) / 2, 6493952,
-			"up/down/right/left\n to shoot !");
 	death_screen(v);
 }
 

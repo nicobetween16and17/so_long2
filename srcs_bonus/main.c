@@ -101,7 +101,7 @@ int	game_time(t_vars *v)
 		v->fire_rate = 0;
 	if (!v->immune)
 		take_damage(v, -1);
-	display_map(v, v->map.map);
+	display_map(v);
 	usleep(10000);
 	if (!(v->time++ % 50))
 		vars_ui_timer(v);

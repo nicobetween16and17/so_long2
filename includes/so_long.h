@@ -119,13 +119,6 @@ typedef struct s_vars {
 	int			delay;
 }	t_vars;
 
-typedef struct s_args
-{
-	t_vars	vars;
-	int		i;
-	int		j;
-}	t_args;
-
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
@@ -188,7 +181,7 @@ int			init_game(t_player *player, t_map map);
 void		handle_input(int keycode,
 				t_map *map, t_player *player, t_vars *vars);
 void		end_game(t_map map);
-void		display_map(t_vars *vars, char **map);
+void		display_map(t_vars *vars);
 int			random_in_range(int a, int range, int start);
 void		ft_bzero(void *b, size_t length);
 int			possible_moove(int key, char **map, t_position pos);
@@ -221,5 +214,8 @@ void		free_sprites(t_vars *v);
 int			damaging(t_vars *v, t_tear *crt);
 void		take_damage(t_vars *v, int i);
 void		death_screen(t_vars *v);
-
+int			set_image(t_vars *vars, t_position pos, char c);
+void		display_nearby_floor(t_vars *v);
+void		display_shits(t_vars *v);
+void		display_walls(t_vars *v)
 #endif
