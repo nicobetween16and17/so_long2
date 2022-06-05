@@ -45,16 +45,29 @@ char	*lines(char *path, int BUFFER)
 
 char	**get_map(char *path)
 {
-	char	**map;
-	char	*macro;
+	char		**map;
+	char		*macro;
+	t_position	p;
 
 	macro = lines(path, buffer(path));
 	if (!macro)
 		return (NULL);
 	map = ft_split(macro, '\n');
-	if (!map)
-		ft_printf("Malloc error\n");
 	free(macro);
+	if (!map)
+		return (NULL);
+	p.x = -1;
+	while (map[++p.x])
+	{
+		p.y = -1;
+		while (map[p.x][++p.y])
+		{
+			if (map[p.x][p.y] != 'P' && map[p.x][p.y] != '1'
+				&& map[p.x][p.y] != '0' && map[p.x][p.y] != 'E'
+			&& map[p.x][p.y] != 'C')
+				return (free_map_array(map));
+		}
+	}
 	return (map);
 }
 

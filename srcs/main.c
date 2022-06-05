@@ -66,6 +66,7 @@ int	destroy(t_vars *vars)
 	ft_printf("endgame\n");
 	if (vars->win)
 		mlx_destroy_window(vars->mlx, vars->win);
+	system("leaks so_long");
 	exit(0);
 }
 
@@ -89,7 +90,7 @@ int	main(int argc, char **argv)
 	if (argc != 2)
 		return (argument_error());
 	v.map.map = get_map(argv[1]);
-	if (!v.map.map)
+	if (!v.map.map && ft_printf("Error, map contain forbidden elements.\n"))
 		return (-1);
 	v.map.nb_collectibles = nb_collectible(v.map);
 	v.map.exits = exits(v.map.map);
@@ -103,7 +104,7 @@ int	main(int argc, char **argv)
 	v.win = mlx_new_window(v.mlx, v.map.width * v.map.data_size,
 			v.map.height * v.map.data_size, "so_long");
 	data_init(&v.map, v.map.data_size, v.map.data_size, v.mlx);
-	display_map(&v, v.map.map);
+	display_map(&v);
 	mlx_hook(v.win, 17, 0, destroy, &v);
 	mlx_hook(v.win, 2, 0, key_hook, &v);
 	mlx_loop(v.mlx);

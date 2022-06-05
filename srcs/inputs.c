@@ -54,16 +54,16 @@ int	set_image(t_vars *vars, t_position pos, char c)
 	return (set_image2(vars, pos, c));
 }
 
-void	display_map(t_vars *v, char **map)
+void	display_map(t_vars *v)
 {
 	t_position	pos;
 
 	pos.y = -1;
-	while (map[++pos.y])
+	while (v->map.map[++pos.y])
 	{
 		pos.x = -1;
-		while (map[pos.y][++pos.x])
-			set_image(v, pos, map[pos.y][pos.x]);
+		while (v->map.map[pos.y][++pos.x])
+			set_image(v, pos, v->map.map[pos.y][pos.x]);
 	}
 }
 
@@ -103,5 +103,5 @@ void	handle_input(int keycode, t_map *map, t_player *player, t_vars *vars)
 		player->nb_collectibles += 1;
 	ft_printf("%de déplaçement\n", player->nb_mooves);
 	map->map[player->cp.x][player->cp.y] = 'P';
-	display_map(vars, map->map);
+	display_map(vars);
 }

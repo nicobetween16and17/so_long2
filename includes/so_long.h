@@ -176,7 +176,7 @@ int			no_exit_error(void);
 int			map_error(void);
 int			wall_error(void);
 int			argument_error(void);
-void		free_map_array(char **map);
+char		**free_map_array(char **map);
 int			check_error(t_map *map);
 int			init_game(t_player *player, t_map map);
 void		handle_input(int keycode,

@@ -12,7 +12,7 @@
 
 #include "../includes/so_long.h"
 
-void	free_map_array(char **map)
+char	**free_map_array(char **map)
 {
 	int	i;
 
@@ -20,6 +20,7 @@ void	free_map_array(char **map)
 	while (map[i])
 		free(map[i++]);
 	free(map);
+	return (NULL);
 }
 
 void	end_game(t_map map)

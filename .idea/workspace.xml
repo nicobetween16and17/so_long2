@@ -32,25 +32,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map1.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map1.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map2.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map2.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/parse_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils1.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils4.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils4.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +55,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="$PROJECT_DIR$/srcs/parse_map.c" />
   </component>
   <component name="ProjectId" id="29I9BzkF9eXB4nYroBQU3EBGapq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,7 +115,7 @@
       <workItem from="1654266290496" duration="9902000" />
       <workItem from="1654336770071" duration="10569000" />
       <workItem from="1654362974227" duration="5252000" />
-      <workItem from="1654419630821" duration="11665000" />
+      <workItem from="1654419630821" duration="15045000" />
     </task>
     <servers />
   </component>
