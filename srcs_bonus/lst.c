@@ -18,6 +18,8 @@ void	duration_plus_one(void *arg)
 
 	current = (t_tear *)arg;
 	current->duration++;
+	if (current->duration > 15)
+		current->visibility = 0;
 }
 
 void	position_shift(void *arg)
@@ -59,3 +61,15 @@ void	init_all_sprites(t_vars *v)
 	v->sprites[6] = NULL;
 }
 
+void	display_all(t_vars *v)
+{
+	t_position	pos;
+
+	pos.y = -1;
+	while (v->map.map[++pos.y])
+	{
+		pos.x = -1;
+		while (v->map.map[pos.y][++pos.x])
+			set_image(v, pos, v->map.map[pos.y][pos.x]);
+	}
+}

@@ -34,15 +34,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map2.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map2.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/ten.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/ten.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map1.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map1.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils4.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils4.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +93,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -115,7 +123,8 @@
       <workItem from="1654257200296" duration="334000" />
       <workItem from="1654266290496" duration="9902000" />
       <workItem from="1654336770071" duration="10569000" />
-      <workItem from="1654362974227" duration="4741000" />
+      <workItem from="1654362974227" duration="5252000" />
+      <workItem from="1654419630821" duration="11665000" />
     </task>
     <servers />
   </component>
@@ -144,11 +153,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1626" y="23" width="1203" height="1511" key="dock-window-1" timestamp="1654363674246">
+    <state x="1627" y="23" width="1253" height="1508" key="dock-window-1" timestamp="1654420366810">
       <screen x="0" y="23" width="2880" height="1517" />
     </state>
     <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654174270505" />
-    <state x="1626" y="23" width="1203" height="1511" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654363674246" />
+    <state x="1627" y="23" width="1253" height="1508" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654420366810" />
     <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

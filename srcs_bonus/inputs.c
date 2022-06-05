@@ -56,22 +56,17 @@ int	set_image(t_vars *v, t_position pos, char c)
 
 void	display_map(t_vars *v)
 {
-	t_position	pos;
-
-	pos.y = -1;
-	while (v->map.map[++pos.y])
-	{
-		pos.x = -1;
-		while (v->map.map[pos.y][++pos.x])
-			set_image(v, pos, v->map.map[pos.y][pos.x]);
-	}
+	if (v->map.nb_collectibles == v->player.nb_collectibles)
+		display_exits(v);
+	display_under_timer(v);
 	handle_moove(v, 1);
+	v->t = 0;
+	display_nearby_floor(v);
+	tear_travel(v, mlx_put_image_to_window);
+	enemies_travel(v, mlx_put_image_to_window);
 	put_hp(v);
 	put_timer(v);
-	v->t = 0;
 	put_mooves(v->player.nb_mooves, v);
-	enemies_travel(v, mlx_put_image_to_window);
-	tear_travel(v, mlx_put_image_to_window);
 	mlx_put_image_to_window(v->mlx, v->win, v->map.images[4].img,
 		v->p.y + 6, v->p.x + 20);
 	mlx_put_image_to_window(v->mlx, v->win, v->map.images[2].img,

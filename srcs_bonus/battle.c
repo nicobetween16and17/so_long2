@@ -40,15 +40,14 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 	while (v->tears)
 	{
 		t = (t_tear *)v->tears->content;
+		if (!t->visibility && display_near_tears(v, t->cp))
+			t->visibility = 0;
 		damaging(v, t);
-		if (collision(t->cp, v, 0, 0))
-			t->cp = new_pos(-50, -50);
-		if (t->duration <= 15)
-		{
+		if (t->duration <= 15 && collision(t->cp, v, 0, 0)
+			&& display_near_tears(v, t->cp))
+			t->duration = 16;
+		if (t->duration <= 15 && display_near_tears(v, t->cp))
 			f(v->mlx, v->win, v->map.images[22].img, t->cp.y, t->cp.x);
-		}
-		else
-			t->cp = new_pos(-50, -50);
 		v->tears = v->tears->next;
 	}
 	v->tears = start;
@@ -104,6 +103,7 @@ void	firing(int key, t_vars *v)
 	v->nb_tears++;
 	set_head(new->s, v);
 	new->duration = 0;
+	new->visibility = 1;
 	system("afplay sound/splatter0.wav &");
 	new->cp = new_pos((v->p.x) + 21, (v->p.y) + 21);
 	ft_lstadd_back(&(v->tears), ft_lstnew((void *)new));

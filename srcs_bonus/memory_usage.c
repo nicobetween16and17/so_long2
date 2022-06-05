@@ -63,7 +63,10 @@ int	collision(t_position current, t_vars *v, int i, int j)
 		{
 			if (map[i][j] == '1'
 				&& collision_pos(new_pos(i * 42, j * 42), current, v))
+			{
+				display_shits(v);
 				return (1);
+			}
 		}
 	}
 	return (0);

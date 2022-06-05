@@ -118,7 +118,7 @@ int	game_time(t_vars *v)
 
 int	main(int argc, char **argv)
 {
-	t_vars		vars;
+	t_vars	vars;
 
 	if (argc != 2)
 		return (argument_error());
@@ -135,9 +135,9 @@ int	main(int argc, char **argv)
 	vars.mlx = mlx_init();
 	vars.win = mlx_new_window(vars.mlx, vars.map.width * vars.map.data_size,
 			vars.map.height * vars.map.data_size, "so_long");
-	data_init(&vars.map,
-		vars.map.data_size, vars.map.data_size, vars.mlx);
+	data_init(&vars.map, vars.map.data_size, vars.map.data_size, vars.mlx);
 	set_vars(&vars);
+	display_all(&vars);
 	mlx_loop_hook(vars.mlx, game_time, &vars);
 	mlx_hook(vars.win, 17, 0, destroy, &vars);
 	mlx_hook(vars.win, 2, 0, key_hook, &vars);

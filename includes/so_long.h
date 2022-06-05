@@ -63,6 +63,7 @@ typedef struct s_tear{
 	t_position	cp;
 	t_sens		s;
 	int			duration;
+	int			visibility;
 }	t_tear;
 
 typedef struct s_data {
@@ -217,5 +218,10 @@ void		death_screen(t_vars *v);
 int			set_image(t_vars *vars, t_position pos, char c);
 void		display_nearby_floor(t_vars *v);
 void		display_shits(t_vars *v);
-void		display_walls(t_vars *v)
+void		display_walls(t_vars *v);
+void		display_all(t_vars *v);
+int			display_near_tears(t_vars *v, t_position tear);
+void		display_under_timer(t_vars *v);
+void		display_exits(t_vars *v);
+
 #endif
