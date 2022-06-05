@@ -66,7 +66,6 @@ int	destroy(t_vars *vars)
 	ft_printf("endgame\n");
 	if (vars->win)
 		mlx_destroy_window(vars->mlx, vars->win);
-	system("leaks so_long");
 	exit(0);
 }
 
