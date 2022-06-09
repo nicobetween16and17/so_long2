@@ -92,6 +92,9 @@ void	death_screen(t_vars *v)
 	if (v->dead)
 	{
 		put_it(v, new_pos(0, 0), 60);
+		put_it(v, new_pos(0, v->map.height / 2), 60);
+		put_it(v, new_pos(v->map.width / 2, 0), 60);
+		put_it(v, new_pos(v->map.width / 2, v->map.height / 2), 60);
 		mlx_put_image_to_window(v->mlx, v->win, v->map.images[61].img,
 			v->map.width * v->map.data_size / 2 - 150,
 			v->map.height * v->map.data_size / 2 - 50);

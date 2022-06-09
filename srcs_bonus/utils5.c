@@ -27,3 +27,20 @@ void	display_exits(t_vars *v)
 		}
 	}
 }
+
+void	display_under_tears(t_vars *v)
+{
+	t_tear	*t;
+	t_list	*start;
+
+	if (!(v->tears))
+		return ;
+	start = v->tears;
+	while (v->tears)
+	{
+		t = (t_tear *)v->tears->content;
+		display_near_tears(v, t->cp);
+		v->tears = v->tears->next;
+	}
+	v->tears = start;
+}

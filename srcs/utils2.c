@@ -75,3 +75,12 @@ int	is_exit(t_position player, t_position *list)
 	}
 	return (0);
 }
+
+t_position	new_pos(int x, int y)
+{
+	t_position	pos;
+
+	pos.x = x;
+	pos.y = y;
+	return (pos);
+}

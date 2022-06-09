@@ -20,7 +20,7 @@ static int	buffer(char *path)
 
 	nb_bytes = 0;
 	fd = open(path, O_RDONLY);
-	if (fd < 0)
+	if (fd < 0 && argument_error())
 		return (fd);
 	while (read(fd, reader, 1))
 		nb_bytes++;

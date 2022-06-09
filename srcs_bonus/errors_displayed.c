@@ -38,6 +38,6 @@ int	no_exit_error(void)
 
 int	mc_error(void)
 {
-	ft_printf("Incorrect number of MC error\n");
+	ft_printf("No babies error\n");
 	return (-1);
 }

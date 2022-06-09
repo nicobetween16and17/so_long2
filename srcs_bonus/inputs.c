@@ -62,6 +62,8 @@ void	display_map(t_vars *v)
 	handle_moove(v, 1);
 	v->t = 0;
 	display_nearby_floor(v);
+	display_under_tears(v);
+	display_under_enemies(v);
 	tear_travel(v, mlx_put_image_to_window);
 	enemies_travel(v, mlx_put_image_to_window);
 	put_hp(v);

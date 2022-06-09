@@ -42,8 +42,6 @@ void	enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 	i = -1;
 	while (v->flies[++i].h.x != -1)
 	{
-		if (v->flies[i].hp > 0)
-			display_near_tears(v, new_pos(v->flies[i].h.y, v->flies[i].h.x));
 		if (j % 4 == 0)
 			v->flies[i].h.x += j % 4;
 		if (j % 4 == 1)
@@ -57,5 +55,17 @@ void	enemies_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 		if (v->flies[i].hp > 0)
 			f(v->mlx, v->win, v->sprites[5]->content,
 				v->flies[i].h.x, v->flies[i].h.y);
+	}
+}
+
+void	display_under_enemies(t_vars *v)
+{
+	int	i;
+
+	i = -1;
+	while (v->flies[++i].h.x != -1)
+	{
+		if (v->flies[i].hp > 0)
+			display_near_tears(v, new_pos(v->flies[i].h.y, v->flies[i].h.x));
 	}
 }

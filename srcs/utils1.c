@@ -48,3 +48,9 @@ int	put_it(t_vars *vars, t_position pos, int img)
 		pos.x * vars->map.data_size, pos.y * vars->map.data_size);
 	return (1);
 }
+
+void	set_vars(t_vars *v)
+{
+	v->player.cp = new_pos(0, 0);
+	v->last_pos = '0';
+}

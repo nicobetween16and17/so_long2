@@ -20,7 +20,7 @@ static int	buffer(char *path)
 
 	nb_bytes = 0;
 	fd = open(path, O_RDONLY);
-	if (fd < 0)
+	if (fd < 0 && argument_error())
 		return (fd);
 	while (read(fd, reader, 1))
 		nb_bytes++;
@@ -64,7 +64,7 @@ char	**get_map(char *path)
 		{
 			if (map[p.x][p.y] != 'P' && map[p.x][p.y] != '1'
 				&& map[p.x][p.y] != '0' && map[p.x][p.y] != 'E'
-			&& map[p.x][p.y] != 'C')
+			&& map[p.x][p.y] != 'C' && ft_printf("Invalid elements Error\n"))
 				return (free_map_array(map));
 		}
 	}

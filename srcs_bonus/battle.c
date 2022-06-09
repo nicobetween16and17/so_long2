@@ -43,8 +43,7 @@ void	tear_travel(t_vars *v, int (*f)(void *, void *, void *, int, int))
 		if (!t->visibility && display_near_tears(v, t->cp))
 			t->visibility = 0;
 		damaging(v, t);
-		if (t->duration <= 15 && collision(t->cp, v, 0, 0)
-			&& display_near_tears(v, t->cp))
+		if (t->duration <= 15 && collision(t->cp, v, 0, 0))
 			t->duration = 16;
 		if (t->duration <= 15 && display_near_tears(v, t->cp))
 			f(v->mlx, v->win, v->map.images[22].img, t->cp.y, t->cp.x);

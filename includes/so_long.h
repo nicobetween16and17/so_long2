@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <stdarg.h>
-# include <math.h>
 # include <fcntl.h>
 # include <mlx.h>
 
@@ -178,7 +177,7 @@ int			wall_error(void);
 int			argument_error(void);
 char		**free_map_array(char **map);
 int			check_error(t_map *map);
-int			init_game(t_player *player, t_map map);
+int			init_game(t_player *player, t_map *map);
 void		handle_input(int keycode,
 				t_map *map, t_player *player, t_vars *vars);
 void		end_game(t_map map);
@@ -223,5 +222,7 @@ void		display_all(t_vars *v);
 int			display_near_tears(t_vars *v, t_position tear);
 void		display_under_timer(t_vars *v);
 void		display_exits(t_vars *v);
+void		display_under_tears(t_vars *v);
+void		display_under_enemies(t_vars *v);
 
 #endif

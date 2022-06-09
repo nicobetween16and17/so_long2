@@ -89,16 +89,16 @@ int	main(int argc, char **argv)
 	if (argc != 2)
 		return (argument_error());
 	v.map.map = get_map(argv[1]);
-	if (!v.map.map && ft_printf("Error, map contain forbidden elements.\n"))
+	if (!v.map.map)
 		return (-1);
 	v.map.nb_collectibles = nb_collectible(v.map);
 	v.map.exits = exits(v.map.map);
-	if (check_error(&(v.map)) == -1)
+	if (check_error(&v.map) == -1)
 		return (-1);
 	v.map.data_size = 42;
-	if (init_game(&v.player, v.map) == -1)
+	set_vars(&v);
+	if (init_game(&v.player, &v.map) == -1)
 		return (-1);
-	v.last_pos = '0';
 	v.mlx = mlx_init();
 	v.win = mlx_new_window(v.mlx, v.map.width * v.map.data_size,
 			v.map.height * v.map.data_size, "so_long");

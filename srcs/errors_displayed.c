@@ -14,19 +14,19 @@
 
 int	argument_error(void)
 {
-	ft_printf("Argument error\n");
+	ft_printf("Argument Error\n");
 	return (-1);
 }
 
 int	wall_error(void)
 {
-	ft_printf("hole in the wall error\n");
+	ft_printf("Hole in the wall Error\n");
 	return (-1);
 }
 
 int	map_error(void)
 {
-	ft_printf("line size error\n");
+	ft_printf("Line size Error\n");
 	return (-1);
 }
 
@@ -38,6 +38,6 @@ int	no_exit_error(void)
 
 int	mc_error(void)
 {
-	ft_printf("Incorrect number of MC error\n");
+	ft_printf("No babies error\n");
 	return (-1);
 }
