@@ -76,7 +76,7 @@ void	display_map(t_vars *v)
 	death_screen(v);
 }
 
-void	handle_input2(int keycode, t_map *map, t_player *player, int *last_pos)
+static void	handle_input2(int keycode, t_map *map, t_player *player, int *last_pos)
 {
 	if (keycode == 13)
 		map->map[player->cp.x][player->cp.y] = *last_pos;

@@ -33,25 +33,9 @@
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map2.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map2.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map5.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map5.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map6.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map6.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/ten.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/ten.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/errors_displayed.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/parse_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/utils1.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils5.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils5.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +80,6 @@
       <recent name="$PROJECT_DIR$/img/boir" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,7 +110,10 @@
       <workItem from="1654524594596" duration="611000" />
       <workItem from="1654589042441" duration="3098000" />
       <workItem from="1654624957882" duration="477000" />
-      <workItem from="1654784253027" duration="8724000" />
+      <workItem from="1654784253027" duration="9746000" />
+      <workItem from="1654851835031" duration="1110000" />
+      <workItem from="1654858354875" duration="2753000" />
+      <workItem from="1654938043142" duration="462000" />
     </task>
     <servers />
   </component>
@@ -162,11 +142,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1" timestamp="1654785086780">
+    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1" timestamp="1654854165693">
       <screen x="0" y="23" width="2880" height="1517" />
     </state>
     <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654174270505" />
-    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654785086780" />
+    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654854165693" />
     <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

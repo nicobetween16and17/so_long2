@@ -26,7 +26,8 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-typedef enum e_sens{
+typedef enum e_sens
+{
 	UP,
 	DOWN,
 	LEFT,
@@ -52,13 +53,15 @@ typedef struct s_fly
 	t_position	h;
 }	t_fly;
 
-typedef struct s_timer {
+typedef struct s_timer
+{
 	int	s;
 	int	m;
 	int	h;
 }	t_timer;
 
-typedef struct s_tear{
+typedef struct s_tear
+{
 	t_position	cp;
 	t_sens		s;
 	int			duration;
@@ -95,7 +98,8 @@ typedef struct s_player
 	int			mooving;
 }	t_player;
 
-typedef struct s_vars {
+typedef struct s_vars
+{
 	void		*mlx;
 	void		*win;
 	t_player	player;

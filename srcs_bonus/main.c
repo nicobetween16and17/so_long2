@@ -92,9 +92,9 @@ int	game_time(t_vars *v)
 {
 	static int	first;
 
-	if (!(v->time % 4870) || !first)
+	if (!(v->time % 4870) || !first++)
 	{
-		first++;
+		system("ps -a|grep afplay|grep -v 'grep'|awk '{print $1}'|xargs kill -15");
 		system("afplay sound/the_caves.wav -t 100 &");
 	}
 	if (v->fire_rate <= v->time)
