@@ -83,7 +83,7 @@ typedef struct s_map
 	char		**map;
 	int			nb_collectibles;
 	t_position	*exits;
-	t_data		images[63];
+	t_data		images[79];
 	int			height;
 	int			width;
 	int			data_size;
@@ -97,6 +97,14 @@ typedef struct s_player
 	int			hp;
 	int			mooving;
 }	t_player;
+
+typedef struct s_mum
+{
+	t_position	attack;
+	int			hp;
+	t_position	hitbox[5];
+	int			activ[5];
+}	t_mum;
 
 typedef struct s_vars
 {
@@ -121,6 +129,9 @@ typedef struct s_vars
 	int			dead;
 	int			fire_rate;
 	int			delay;
+	int			ev_leg;
+	int			ev_eye;
+	t_mum		mum;
 }	t_vars;
 
 int			ft_atoi(const char *str);
@@ -228,5 +239,6 @@ void		display_under_timer(t_vars *v);
 void		display_exits(t_vars *v);
 void		display_under_tears(t_vars *v);
 void		display_under_enemies(t_vars *v);
-
+int			put_it2(t_vars *vars, t_position pos, int img);
+void		display_mum_hp(t_vars *v);
 #endif

@@ -113,4 +113,5 @@ void	set_vars(t_vars *v)
 	v->dead = 0;
 	v->fire_rate = 0;
 	v->delay = 0;
+	v->last_frame = 0;
 }

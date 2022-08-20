@@ -21,21 +21,40 @@
     </expand>
     <select />
   </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/maps/mum.ber" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/battle.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/controlls.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/error_checking.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/errors_displayed.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/hooks.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/inputs.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/lst.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/memory_usage.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/parse_map.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/util.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/utils2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/utils3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/utils4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mum/utils5.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/hooks.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +72,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="OCResolveContextSettings">
     <option name="configuration" value="$PROJECT_DIR$/srcs/parse_map.c" />
   </component>
@@ -62,22 +84,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/niespana/Documents/untitled folder",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/includes" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mum" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/img/boir" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sound" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/includes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +139,17 @@
       <workItem from="1654784253027" duration="9746000" />
       <workItem from="1654851835031" duration="1110000" />
       <workItem from="1654858354875" duration="2753000" />
-      <workItem from="1654938043142" duration="462000" />
+      <workItem from="1654938043142" duration="13090000" />
+      <workItem from="1655032614433" duration="6000000" />
+      <workItem from="1656749614760" duration="3294000" />
+      <workItem from="1656759870884" duration="1271000" />
+      <workItem from="1656766870140" duration="4338000" />
+      <workItem from="1657286742906" duration="1188000" />
+      <workItem from="1659973401670" duration="1238000" />
+      <workItem from="1660126794192" duration="22000" />
+      <workItem from="1660141143123" duration="556000" />
+      <workItem from="1660152074608" duration="7000" />
+      <workItem from="1660652430170" duration="756000" />
     </task>
     <servers />
   </component>
@@ -130,35 +166,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="504" y="564" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1654787899716">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state x="448" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1653631202586" />
-    <state x="504" y="564" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2880.1517@0.23.2880.1517" timestamp="1654787899716" />
-    <state x="252" y="330" key="SettingsEditor" timestamp="1653053942527">
-      <screen x="0" y="23" width="2560" height="1337" />
-    </state>
-    <state x="252" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1653053942527" />
-    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1" timestamp="1654854165693">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state x="1535" y="23" width="1012" height="1331" key="dock-window-1/0.23.2560.1337@0.23.2560.1337" timestamp="1654174270505" />
-    <state x="1625" y="23" width="1255" height="1516" key="dock-window-1/0.23.2880.1517@0.23.2880.1517" timestamp="1654854165693" />
-    <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog" timestamp="1652789603457">
-      <screen x="0" y="23" width="2560" height="1337" />
-    </state>
-    <state x="314" y="602" width="852" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1652789603457" />
-    <state x="405" y="326" key="run.anything.popup" timestamp="1652790142351">
-      <screen x="0" y="23" width="2560" height="1337" />
-    </state>
-    <state x="405" y="326" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1652790142351" />
-    <state x="1919" y="367" width="754" height="768" key="search.everywhere.popup" timestamp="1654353235195">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state x="1706" y="326" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1653904347229" />
-    <state x="1919" y="367" width="754" height="768" key="search.everywhere.popup/0.23.2880.1517@0.23.2880.1517" timestamp="1654353235195" />
   </component>
 </project>
