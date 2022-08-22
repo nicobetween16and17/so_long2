@@ -133,6 +133,11 @@ typedef struct s_vars
 	int			ev_eye;
 	t_mum		mum;
 }	t_vars;
+typedef struct s_list_pos
+{
+	t_position			pos;
+	struct s_list_pos	*next;
+}t_list_pos;
 
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
@@ -240,5 +245,5 @@ void		display_exits(t_vars *v);
 void		display_under_tears(t_vars *v);
 void		display_under_enemies(t_vars *v);
 int			put_it2(t_vars *vars, t_position pos, int img);
-void		display_mum_hp(t_vars *v);
+int			avaible_path(char **map, int i, int j, t_position player);
 #endif
