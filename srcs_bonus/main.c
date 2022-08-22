@@ -130,11 +130,11 @@ int	main(int argc, char **argv)
 	if (check_error(&(vars.map)) == -1)
 		return (-1);
 	vars.map.data_size = 42;
+	if (init_game(&vars.player, &vars.map) == -1)
+		return (-1);
 	if (!avaible_path(vars.map.map, -1, -1,vars.player.cp))
 		return (0);
 	exit(0);
-	if (init_game(&vars.player, &vars.map) == -1)
-		return (-1);
 	vars.mlx = mlx_init();
 	vars.win = mlx_new_window(vars.mlx, vars.map.width * vars.map.data_size,
 			vars.map.height * vars.map.data_size, "so_long");
