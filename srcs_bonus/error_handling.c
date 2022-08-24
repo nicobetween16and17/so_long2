@@ -37,7 +37,7 @@ int	issues(int argc, t_vars *v, char **argv)
 	if (argc != 2)
 		return (argument_error());
 	v->map.map = get_map(argv[1]);
-	if (!v->map.map && ft_printf("Error: empty map\n"))
+	if (!v->map.map)
 		return (1);
 	v->map.nb_collectibles = nb_collectible(v->map);
 	v->map.exits = exits(v->map.map);

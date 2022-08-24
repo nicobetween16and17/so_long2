@@ -15,7 +15,7 @@
 int	argument_error(void)
 {
 	ft_printf("Error: argument invalid\n");
-	return (-1);
+	return (1);
 }
 
 int	wall_error(void)

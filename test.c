@@ -3,7 +3,8 @@
 
 int main(int ac, char **av)
 {
-	system("while:;do afplay /sound/baby_hurt.wav &;done");
+	int c = sizeof(char);
+	printf("%d\n", c);
 
 	return (0);
 }

@@ -34,21 +34,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maps/test.ber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_print_ptr.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_print_ptr.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_printf.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_printhex.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_printhex.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_utils.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map1.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map1.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map2.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map2.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map3.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map3.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map4.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map4.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map5.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map5.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map6.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map6.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map7.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map7.ber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/errors_displayed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/error_checking.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_checking.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/error_handling.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/error_handling.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/errors_displayed.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/errors_displayed.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/inputs.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/inputs.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/lst_pos.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/lst_pos.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/parse_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/parse_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/parse_map.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/path.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/path.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils1.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils1.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils2.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils2.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/controlls.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_handling.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_handling.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/error_handling.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_handling.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" afterDir="false" />
@@ -59,6 +75,7 @@
       <change beforePath="$PROJECT_DIR$/srcs_bonus/lst_pos.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst_pos.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/path.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/path.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.o" afterDir="false" />
@@ -66,6 +83,7 @@
       <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils3.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/utils4.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils4.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/utils5.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils5.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

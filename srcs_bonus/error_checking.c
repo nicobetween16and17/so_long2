@@ -65,7 +65,7 @@ int	init_game2(t_player *player, int *bool)
 {
 	if (!bool[0])
 		return (mc_error());
-	if (!bool[1] && ft_printf("No collectibles error\n"))
+	if (!bool[1] && ft_printf("Error: no collectibles\n"))
 		return (-1);
 	player->hp = 6;
 	player->nb_mooves = 0;

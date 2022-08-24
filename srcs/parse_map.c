@@ -28,7 +28,7 @@ static int	buffer(char *path)
 	return (nb_bytes);
 }
 
-char	*lines(char *path, int BUFFER)
+static char	*lines(char *path, int BUFFER)
 {
 	char	*lines;
 	int		fd;
@@ -43,31 +43,47 @@ char	*lines(char *path, int BUFFER)
 	return (lines);
 }
 
+static int	invalid_element(char c, char last)
+{
+	static int	dups;
+
+	if (c == last && c == '\n')
+		return (ft_printf("Error: empty line in the map\n"));
+	if (c == 'P')
+		dups++;
+	if (dups > 1)
+		return (ft_printf("Error: Duplicate starting baby\n"));
+	if (c != '1' && c != '\n' && c != 'E'
+		&& c != 'P' && c != '0' && c != 'C')
+		return (ft_printf("Error: Invalid element in the map\n"));
+	return (0);
+}
+
 char	**get_map(char *path)
 {
-	char		**map;
-	char		*macro;
-	t_position	p;
+	char	**map;
+	char	*macro;
+	int		i;
+	char	last;
 
+	i = -1;
+	last = '\n';
 	macro = lines(path, buffer(path));
-	if (!macro)
+	if (!macro && ft_printf("Error: Empty map\n"))
 		return (NULL);
-	map = ft_split(macro, '\n');
-	free(macro);
-	if (!map)
-		return (NULL);
-	p.x = -1;
-	while (map[++p.x])
+	while (macro[++i])
 	{
-		p.y = -1;
-		while (map[p.x][++p.y])
+		if (invalid_element(macro[i], last))
 		{
-			if (map[p.x][p.y] != 'P' && map[p.x][p.y] != '1'
-				&& map[p.x][p.y] != '0' && map[p.x][p.y] != 'E'
-			&& map[p.x][p.y] != 'C' && ft_printf("Invalid elements Error\n"))
-				return (free_map_array(map));
+			free(macro);
+			return (NULL);
 		}
+		last = macro[i];
 	}
+	map = ft_split(macro, '\n');
+	if (!map)
+		ft_printf("Malloc error\n");
+	free(macro);
 	return (map);
 }
 
