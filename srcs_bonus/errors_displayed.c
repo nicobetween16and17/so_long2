@@ -14,30 +14,30 @@
 
 int	argument_error(void)
 {
-	ft_printf("Argument error\n");
+	ft_printf("Error: argument invalid\n");
 	return (-1);
 }
 
 int	wall_error(void)
 {
-	ft_printf("hole in the wall error\n");
+	ft_printf("Error: hole in the wall\n");
 	return (-1);
 }
 
 int	map_error(void)
 {
-	ft_printf("line size error\n");
+	ft_printf("Error: line size\n");
 	return (-1);
 }
 
-int	no_exit_error(void)
+int	n_e_error(void)
 {
-	ft_printf("No exits error\n");
-	return (-1);
+	ft_printf("Error: No exits\n");
+	return (1);
 }
 
 int	mc_error(void)
 {
-	ft_printf("No babies error\n");
+	ft_printf("Error: Baby not found\n");
 	return (-1);
 }

@@ -191,7 +191,7 @@ int			nb_collectible(t_map map);
 t_position	*exits(char **map);
 int			is_exit(t_position player, t_position *list);
 int			mc_error(void);
-int			no_exit_error(void);
+int			n_e_error(void);
 int			map_error(void);
 int			wall_error(void);
 int			argument_error(void);

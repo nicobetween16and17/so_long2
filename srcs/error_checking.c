@@ -56,8 +56,8 @@ int	check_error(t_map *map)
 	i = 0;
 	while (map->exits[i].x != -1)
 		i++;
-	if (!i)
-		return (no_exit_error());
+	if ((!i && n_e_error()) || (i > 1 && ft_printf("Error: 2 many exits\n")))
+		return (-1);
 	return (1);
 }
 

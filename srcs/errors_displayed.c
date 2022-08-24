@@ -30,14 +30,14 @@ int	map_error(void)
 	return (-1);
 }
 
-int	no_exit_error(void)
+int	n_e_error(void)
 {
-	ft_printf("No exits error\n");
-	return (-1);
+	ft_printf("Error: No exits\n");
+	return (1);
 }
 
 int	mc_error(void)
 {
-	ft_printf("No babies error\n");
+	ft_printf("Error: No baby\n");
 	return (-1);
 }
