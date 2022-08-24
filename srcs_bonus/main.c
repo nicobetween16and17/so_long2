@@ -94,7 +94,7 @@ int	game_time(t_vars *v)
 
 	if (!(v->time % 4870) || !first++)
 	{
-		system("ps -a|grep afplay|grep -v 'grep'|awk '{print $1}'|xargs kill -15");
+		system("ps -a|grep afplay|grep -v 'grep'|awk'{print $1}'|xargs kill -15");
 		system("afplay sound/the_caves.wav -t 100 &");
 	}
 	if (v->fire_rate <= v->time)
@@ -132,9 +132,8 @@ int	main(int argc, char **argv)
 	vars.map.data_size = 42;
 	if (init_game(&vars.player, &vars.map) == -1)
 		return (-1);
-	if (!avaible_path(vars.map.map, -1, -1,vars.player.cp))
-		return (0);
-	exit(0);
+	if (!avaible_path(vars.map.map, -1, -1, vars.player.cp))
+		return (ft_printf("Game not finishable\n"));
 	vars.mlx = mlx_init();
 	vars.win = mlx_new_window(vars.mlx, vars.map.width * vars.map.data_size,
 			vars.map.height * vars.map.data_size, "so_long");
@@ -145,5 +144,4 @@ int	main(int argc, char **argv)
 	mlx_hook(vars.win, 17, 0, destroy, &vars);
 	mlx_hook(vars.win, 2, 0, key_hook, &vars);
 	mlx_loop(vars.mlx);
-	return (0);
 }

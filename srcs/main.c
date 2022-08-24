@@ -89,7 +89,7 @@ int	main(int argc, char **argv)
 	if (argc != 2)
 		return (argument_error());
 	v.map.map = get_map(argv[1]);
-	if (!v.map.map)
+	if (!v.map.map && ft_printf("Empty map error\n"))
 		return (-1);
 	v.map.nb_collectibles = nb_collectible(v.map);
 	v.map.exits = exits(v.map.map);

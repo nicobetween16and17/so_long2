@@ -246,4 +246,7 @@ void		display_under_tears(t_vars *v);
 void		display_under_enemies(t_vars *v);
 int			put_it2(t_vars *vars, t_position pos, int img);
 int			avaible_path(char **map, int i, int j, t_position player);
+void		cpy_map(char **map, char **save);
+t_list_pos	*new_list_pos(int x, int y);
+void		add_front_list_pos(t_list_pos **start, t_list_pos *new);
 #endif

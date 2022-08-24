@@ -76,23 +76,23 @@ void	display_map(t_vars *v)
 	death_screen(v);
 }
 
-static void	handle_input2(int keycode, t_map *map, t_player *player, int *last_pos)
+static void	handle_input2(int key, t_map *map, t_player *player, int *last_pos)
 {
-	if (keycode == 13)
+	if (key == 13)
 		map->map[player->cp.x][player->cp.y] = *last_pos;
-	if (keycode == 0)
+	if (key == 0)
 		map->map[player->cp.x][player->cp.y] = *last_pos;
-	if (keycode == 2)
+	if (key == 2)
 		map->map[player->cp.x][player->cp.y] = *last_pos;
-	if (keycode == 1)
+	if (key == 1)
 		map->map[player->cp.x][player->cp.y] = *last_pos;
-	if (keycode == 1)
+	if (key == 1)
 		player->cp.x += 1;
-	if (keycode == 0)
+	if (key == 0)
 		player->cp.y -= 1;
-	if (keycode == 2)
+	if (key == 2)
 		player->cp.y += 1;
-	if (keycode == 13)
+	if (key == 13)
 		player->cp.x -= 1;
 	*last_pos = map->map[player->cp.x][player->cp.y];
 	if (*last_pos == 'C')

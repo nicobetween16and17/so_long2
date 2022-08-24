@@ -34,31 +34,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79f5650-f6ed-4fa3-ab47-0ed051efb095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/srcs/lst_pos.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/path.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_print_ptr.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_print_ptr.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_printf.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_printhex.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_printhex.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf/ft_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/ft_utils.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/routes.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/routes.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/battle.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/controlls.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/ten.ber" beforeDir="false" afterPath="$PROJECT_DIR$/maps/ten.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/battle.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/controlls.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/error_checking.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/hooks.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/init.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/lst.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/error_checking.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/errors_displayed.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/hooks.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/inputs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/lst.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs_bonus/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/parse_map.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/util.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils3.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils4.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils4.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils5.o" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils5.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/memory_usage.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/parse_map.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/util.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils5.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs_bonus/utils5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs_bonus/utils5.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,25 +95,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/niespana/Documents/untitled folder",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/niespana/Documents/so_long/srcs&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs" />
       <recent name="$PROJECT_DIR$/mum" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/img/boir" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs_bonus" />
       <recent name="$PROJECT_DIR$/sound" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/includes" />
@@ -158,6 +167,8 @@
       <workItem from="1660652430170" duration="756000" />
       <workItem from="1661162520986" duration="5804000" />
       <workItem from="1661174796001" duration="5006000" />
+      <workItem from="1661182204610" duration="1528000" />
+      <workItem from="1661331798446" duration="819000" />
     </task>
     <servers />
   </component>
