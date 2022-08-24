@@ -14,7 +14,7 @@
 
 int	nb_avaible_routes(int i, int j, char **map)
 {
-	int routes;
+	int	routes;
 
 	routes = 0;
 	if (map[i][j + 1] != '1')
@@ -38,6 +38,7 @@ t_position	next_avaible_routes(int i, int j, char **map)
 		return (new_pos(i + 1, j));
 	return (new_pos(i - 1, j));
 }
+
 int	clear_path(t_position object, t_position player, char **map)
 {
 	t_list_pos	*save;
@@ -71,13 +72,13 @@ char	**duplicate_map(char **map)
 	char	**res;
 
 	i = 0;
-	while(map[i])
+	while (map[i])
 		i++;
 	res = malloc(sizeof(char *) * (i + 1));
 	if (!res)
 		return (NULL);
 	i = -1;
-	while(map[++i])
+	while (map[++i])
 	{
 		j = -1;
 		res[i] = malloc(sizeof(char) * (ft_strlen(map[i]) + 1));
@@ -91,11 +92,12 @@ char	**duplicate_map(char **map)
 	return (res);
 }
 
-int avaible_path(char **map, int i, int j, t_position player)
+int	avaible_path(char **map, int i, int j, t_position player)
 {
 	int		res;
 	char	**save;
 
+	ft_printf("[%d][%d]\n", player.x, player.y);
 	save = duplicate_map(map);
 	res = 1;
 	while (map[++i])

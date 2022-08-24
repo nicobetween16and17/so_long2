@@ -47,7 +47,7 @@ int	put_shit(t_vars *v, t_position p, int i)
 				put_it(v, p, 39);
 			else if (v->shits[i].state <= 1)
 			{
-				system("afplay sound/plop.wav &");
+				system(v->poop_poping_s_effect);
 				v->map.map[p.y][p.x] = 'M';
 			}
 		}

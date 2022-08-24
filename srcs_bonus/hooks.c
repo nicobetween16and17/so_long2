@@ -14,9 +14,9 @@
 
 int	destroy(t_vars *vars)
 {
-	system("ps -a|grep afplay|grep -v 'grep'|awk '{print $1}'|xargs kill -15");
+	system(vars->background_music_kill);
 	if (vars->dead)
-		system("afplay sound/isaac_dies_new.wav ");
+		system(vars->baby_dead_s_effect);
 	if (vars->flies)
 		free(vars->flies);
 	if (vars->shits)

@@ -20,7 +20,7 @@ void	add_front_list_pos(t_list_pos **start, t_list_pos *new)
 
 t_list_pos	*new_list_pos(int x, int y)
 {
-	t_list_pos *saves;
+	t_list_pos	*saves;
 
 	saves = malloc(sizeof(t_list_pos));
 	saves->pos = new_pos(x, y);

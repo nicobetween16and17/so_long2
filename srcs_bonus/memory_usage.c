@@ -35,7 +35,7 @@ int	collision_effect(t_position p, t_vars *v, int i)
 	{
 		if (v->shits[i].p.x == p.x && v->shits[i].p.y == p.y)
 		{
-			system("afplay sound/tear_block.wav &");
+			system(v->tears_collision_s_effect);
 			v->shits[i].state -= 1;
 		}
 	}

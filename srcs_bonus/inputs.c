@@ -116,11 +116,11 @@ void	handle_input(int keycode, t_map *map, t_player *player, t_vars *vars)
 	if (map->map[player->cp.x][player->cp.y] == 'C')
 	{
 		player->nb_collectibles += 1;
-		system("afplay sound/penny_pickup_1.wav &");
+		system(vars->penny_pickup_s_effect);
 	}
 	player->mooving++;
 	ft_printf("%de déplaçement\n", player->nb_mooves);
 	map->map[player->cp.x][player->cp.y] = 'P';
 	if (map->nb_collectibles == player->nb_collectibles && !final_sound++)
-		system("afplay sound/golden_key.wav &");
+		system(vars->traps_open_s_effect);
 }

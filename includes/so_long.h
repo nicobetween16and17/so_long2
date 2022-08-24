@@ -98,14 +98,6 @@ typedef struct s_player
 	int			mooving;
 }	t_player;
 
-typedef struct s_mum
-{
-	t_position	attack;
-	int			hp;
-	t_position	hitbox[5];
-	int			activ[5];
-}	t_mum;
-
 typedef struct s_vars
 {
 	void		*mlx;
@@ -129,15 +121,23 @@ typedef struct s_vars
 	int			dead;
 	int			fire_rate;
 	int			delay;
-	int			ev_leg;
-	int			ev_eye;
-	t_mum		mum;
+	char		background_music_kill[80];
+	char		background_music_start[80];
+	char		tears_sound_effect[80];
+	char		tears_collision_s_effect[80];
+	char		poop_poping_s_effect[80];
+	char		baby_hurt_s_effect[80];
+	char		baby_dead_s_effect[80];
+	char		penny_pickup_s_effect[80];
+	char		traps_open_s_effect[80];
+	char		summon_s_effect[80];
 }	t_vars;
+
 typedef struct s_list_pos
 {
 	t_position			pos;
 	struct s_list_pos	*next;
-}t_list_pos;
+}	t_list_pos;
 
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
@@ -249,4 +249,5 @@ int			avaible_path(char **map, int i, int j, t_position player);
 void		cpy_map(char **map, char **save);
 t_list_pos	*new_list_pos(int x, int y);
 void		add_front_list_pos(t_list_pos **start, t_list_pos *new);
+int			issues(int argc, t_vars *v, char **argv);
 #endif

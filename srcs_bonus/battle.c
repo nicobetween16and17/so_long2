@@ -103,7 +103,7 @@ void	firing(int key, t_vars *v)
 	set_head(new->s, v);
 	new->duration = 0;
 	new->visibility = 1;
-	system("afplay sound/splatter0.wav &");
+	system(v->tears_sound_effect);
 	new->cp = new_pos((v->p.x) + 21, (v->p.y) + 21);
 	ft_lstadd_back(&(v->tears), ft_lstnew((void *)new));
 	v->map.images[2].img = v->map.images[3].img;

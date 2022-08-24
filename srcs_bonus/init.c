@@ -91,7 +91,7 @@ void	init_flies(t_vars *v, char **map, int nb_flies, int i_fly)
 				v->flies[i_fly].h = new_pos(pos.x * 42, pos.y * 42);
 				v->flies[i_fly++].hp = 6;
 				if (!first++)
-					system("afplay sound/summonsound.wav &");
+					system(v->summon_s_effect);
 			}
 		}
 	}

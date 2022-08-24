@@ -30,6 +30,7 @@ SRCBONUS		=   ../ft_printf/ft_print_ptr.c\
                     utils5.c\
                     path.c\
                     lst_pos.c\
+                    error_handling.c\
 
 SRC				=   ../ft_printf/ft_print_ptr.c\
                     ../ft_printf/ft_printf.c\
@@ -44,6 +45,7 @@ SRC				=   ../ft_printf/ft_print_ptr.c\
                     utils2.c\
                     path.c\
                     lst_pos.c\
+                    error_handling.c\
 
 SRCSBONUS		=	$(addprefix $(SRCDIRBONUS), $(SRCBONUS))
 

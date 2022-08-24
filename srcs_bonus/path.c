@@ -48,7 +48,6 @@ int	clear_path(t_position object, t_position player, char **map)
 	save = new_list_pos(object.x, object.y);
 	while (current.x != player.x || current.y != player.y)
 	{
-		display(map, -1, -1, current);
 		while (save && nb_avaible_routes(current.x, current.y, map) == 0)
 		{
 			map[current.x][current.y] = '1';
@@ -100,7 +99,6 @@ int	avaible_path(char **map, int i, int j, t_position player)
 
 	save = duplicate_map(map);
 	res = 1;
-	display(map, -1, -1, new_pos(0, 0));
 	while (map[++i])
 	{
 		j = -1;

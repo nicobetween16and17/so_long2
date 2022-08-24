@@ -86,18 +86,7 @@ int	main(int argc, char **argv)
 {
 	t_vars		v;
 
-	if (argc != 2)
-		return (argument_error());
-	v.map.map = get_map(argv[1]);
-	if (!v.map.map && ft_printf("Empty map error\n"))
-		return (-1);
-	v.map.nb_collectibles = nb_collectible(v.map);
-	v.map.exits = exits(v.map.map);
-	if (check_error(&v.map) == -1)
-		return (-1);
-	v.map.data_size = 42;
-	set_vars(&v);
-	if (init_game(&v.player, &v.map) == -1)
+	if (issues(argc, &v, argv))
 		return (-1);
 	v.mlx = mlx_init();
 	v.win = mlx_new_window(v.mlx, v.map.width * v.map.data_size,
