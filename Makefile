@@ -62,11 +62,13 @@ CFLAGS 		= -Wall -Werror -Wextra -Imlx -I $(INCDIR)
 all:		$(NAME)
 
 $(NAME):	$(SRCS) $(OBJS)
+			cd libft && make re && cd .. && cd mlx && make && cd ..
 			$(CC) $(CFLAGS) libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit $(OBJS) -o $(NAME)
 
 bonus:		$(NAMEBONUS)
 
 $(NAMEBONUS):	$(SRCSBONUS) $(OBJSBONUS)
+				cd libft && make re && cd .. && cd mlx && make re && cd ..
 				$(CC) $(CFLAGS) libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit $(OBJSBONUS) -o $(NAMEBONUS)
 
 %.o:		%.c
