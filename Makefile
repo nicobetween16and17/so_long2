@@ -68,7 +68,7 @@ $(NAME):	$(SRCS) $(OBJS)
 bonus:		$(NAMEBONUS)
 
 $(NAMEBONUS):	$(SRCSBONUS) $(OBJSBONUS)
-				cd libft && make re && cd .. && cd mlx && make re && cd ..
+				cd libft && make bonus && cd .. && cd mlx && make && cd ..
 				$(CC) $(CFLAGS) libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit $(OBJSBONUS) -o $(NAMEBONUS)
 
 %.o:		%.c
@@ -79,6 +79,7 @@ clean:
 
 fclean:		clean
 			rm -f $(NAME) $(NAMEBONUS)
+			cd libft && make fclean && cd .. && cd mlx && make clean && cd ..
 
 re:			fclean all
 
